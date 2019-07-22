@@ -10,6 +10,7 @@ html {
   box-sizing: inherit;
 }
 
+<<<<<<< HEAD
 
 body{
   max-width:960px;
@@ -131,4 +132,12 @@ menu__button{
   display: flex;
   flex-direction: column;
   list-style: none;
+=======
+body {
+  color: $yellow;
+  background: $violet;
+}
+.secondHeader{
+  color: $pink;
+>>>>>>> ad80a94f99eccc6510a943c24fecd3c91ed3d95e
 }

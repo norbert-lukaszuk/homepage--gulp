@@ -1,0 +1,120 @@
+html {
+    box-sizing: border-box;
+    background: gray;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+.footer__paragraph {
+    padding-left: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(350px,auto));
+    grid-gap: 10px 10px;
+    margin: 0 10px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.grid__element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.25);
+    background:linear-gradient(hotpink,black);
+    border-radius: 10px;
+}
+
+.gridElement__description{
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: flex-start;
+    padding-left: 10px;
+    width: 75%;
+    text-align: justify;
+}
+.gridElement__logoAtari{}
+
+.gridElement__logoApple{}
+
+.gridElement__logoBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.gridElement__logoComodore{
+    align-self: flex-start;
+}
+.gridElement__logoNeXT{}
+.gridElement__logoWindows{
+    padding-right: 15px;
+}
+
+.gridElement__name{
+    font-size: 45px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-self: flex-end;
+    padding-right: 20px;
+}
+.gridElement__gatesPhoto--round{
+    border-radius: 50%;
+}
+.gridElement__jobsPhoto--round{
+    border-radius: 50%;
+}
+.gridElement__torvaldsPhoto--round{
+    border-radius: 50%;
+}
+    
+.gridElement__tramielPhoto--round{
+    border-radius: 90px;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link__menu{
+    text-decoration: none;
+    color: black;
+   
+}.link__menu:hover{
+    color: white;
+}
+.gridElement__name:hover{
+    color: gray;
+    transition: 1s;
+}
+.main__header{
+    font-family: Arial, Helvetica;
+
+}
+.main__header::before{
+    content: "::before";
+    display: inline-block;
+    /* width: 25px; */
+    /* height: 25px; */
+    background: hotpink;
+    border: solid 2px;
+
+}
+.
+/* Breakpoint po którym zmienia się ilość kolumn z 2 na 1.
+Funkcja potrzebna do wyświetlania na mobilkach */
+@media (max-width:640px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}

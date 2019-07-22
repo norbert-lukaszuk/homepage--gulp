@@ -4,37 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
-
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
-
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
-
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
-
+    <title>Main Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="src/scss/famousPeople.scss">
+    </head>
+      <nav class="navigation">
+      <ul class="navigationList navigationList--js">
+        <li><a class="link__menu" href="index1.html">About me</a></li>
+        <li><a class="link__menu" href="famousPeople.html">Famous people in PC histoty</a></li>
+        <li><a class="link__menu" href="forms.html">Forms</a></li>
+        <li><a class="link__menu" href="sass.html">SASS</a></li>
+        <li><a class="link__menu" href="pseudoelements.html">Pseudoelements</a></li>
+        <li><a class="link__menu" href="steveJobsFlex.html">Steve Jobs</a></li>
+        <li><a class="link__menu" href="jackTramiel.html">Jack Tramiel</a></li>
+        <li><a class="link__menu" href="billGates.html">Bill Gates</a></li>
+      </ul>
+    
+    </nav>
+    <button class="menu__button menu__button--js">≡</button>
+    
+    <body>
+      <h1>Main Page</h1>
+      <main>
+        <div class="grid">
+          <div class="one">header</div>
+          <div class="articles">
+            <h2>Articles</h2>
+            <div class="articles__grid">
+              <div class="articles__photo">
+                <img class="articles__photo--round" src="assets/img/linus torvalds 100x100px.jpg" alt="Linus Tornvalds photo">
+              </div>
+              <div class="articles__text">article#1</div>
+              <div class="articles__photo">
+                <img class="articles__photo--round" src="assets/img/jack tramiel 100x100px.jpg" alt="Jack Tramiel photo">
+              </div>
+              <div class="articles__text">article#2</div>
+              <div class="articles__photo">
+                <img class="articles__photo--round" src="assets/img/Bill Gates 100x100px.jpg" alt="Bill Gates photo">
+              </div>
+              <div class="articles__text">article#3</div>
+              <div class="articles__photo">
+                <img class="articles__photo--round" src="assets/img/steve jobs 100x100px.jpg" alt="Steve Jobs photo">
+              </div>
+              <div class="articles__text">article#4</div>
+              
+            </div>
+          </div>
+          <div class="sidebar">menu
+            <nav class="sidebar__navigation">
+              <ul class="navigation__items">
+                <li class="navigation__item">Page 1</li>
+                <li class="navigation__item">Page 2</li>
+                <li class="navigation__item">Page 3</li>
+                <li class="navigation__item">Page 4</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="four">four</div>
+    
+        </div>
+      </main>
+    </body>
     <script src="js/main.js"></script>
-  </body>
+    
 </html>

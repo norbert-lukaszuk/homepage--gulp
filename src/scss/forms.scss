@@ -1,0 +1,25 @@
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    background: rgb(204, 198, 198);
+}
+.navigationList {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.link__menu {
+    text-decoration: none;
+    color: black;
+}
+nav{
+    border: black dotted 1px;
+    position: fixed;
+    background: rgba(37, 192, 44, 0.418)
+    
+    
+}
+h1{
+    padding-top:100px;
+}

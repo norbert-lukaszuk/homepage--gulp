@@ -6,12 +6,21 @@
 
 
 html{
-  background-color: rgb(190, 187, 187)
+  background-color: rgb(190, 187, 187);
+  font-family: Arial, Helvetica;
 }
 
 body{
   max-width:960px;
   margin: 0 auto;
+}
+.bold {
+  color: brown;
+  font-size: 22px;
+}
+.bolder{
+  color:tomato;
+  font-size: 21px;
 }
 .grid{
   display: grid;
@@ -23,6 +32,20 @@ body{
   text-align: center;
 
 }
+.image{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+      &--shadow{
+        box-shadow: 7px 7px 8px black;
+        margin-bottom: 30px;
+      }
+  
+}
+
+  
 .one{
   
   background: rgb(101, 216, 151);
@@ -144,5 +167,16 @@ body{
 
   }
 }
+
+.paragraph{
+  font-size: 18px;
+      &::first-letter{
+      font-size: 24px;
+      background: tomato;
+      text-align: justify;
+
+      }
+}
+
 
 

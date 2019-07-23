@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SASS</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<nav>
+    <ul class="navigationList navigationList--js">
+				<li><a class="link__menu" href="index.html">Home Page</a></li>
+				<li><a class="link__menu" href="forms.html">Forms</a></li>
+        
+    </ul>
+
+</nav>
+<button class="menu__button menu__button--js">≡</button>
+<body>
+    <h1>SASS</h1>
+    <p class="paragraph"><strong>SASS</strong> służy do budowania złożonych stylów. <br> 
+    Możemy definiować zmienne przy użyciu znaku <b class="bolder">$</b>.
+    </p>
+    <img src="assets/img/sass $.png" >
+    <p class="paragraph">Funkcja <b class="bolder">@mixin</b> tworzy zestaw reguł CSS w formie funcji , którą możemy wywołać
+    przez <b class="bolder">@include</b>.
+    </p>
+    <img src="assets/img/@mixin @include.png" alt="@mixin & $include">
+    <p class="paragraph">Funkcję <b class="bolder">@mixin</b> możemy także zdefiniować z parametrami, które podamy wywołując 
+    funkcję za pomocą <b class="bolder">@include</b>.
+    </p>
+    <img src="assets/img/@mixin @include with parametr.png" alt="">
+    <p class="paragraph">Parent selector <b class="bolder">&</b> pozwala tworzyć nowe klasy będące dziećmi klas wyższych. </p>
+    <img src="assets/img/& parent selector.png">
+</body>
+<script src="js/main.js"></script>
+</html>

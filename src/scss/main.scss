@@ -32,6 +32,46 @@ body{
   text-align: center;
 
 }
+.hover__header {
+  text-align: center;
+    &:hover{
+      color: tomato;
+    }
+}
+
+.input {
+  font-weight: bold;
+  &:focus{
+    border: red 2px solid;
+    background: greenyellow;
+  }
+}
+
+
+
+.list {
+
+  font-weight: bold;
+  min-width: 40%;
+}
+
+.list__box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.listItem {
+  font-weight: normal;
+}
+
+.listItem:first-child {
+  background: red;
+}
+
+.listItem:last-child {
+  background: greenyellow;
+}
 .image{
   display: flex;
   flex-direction: column;
@@ -41,6 +81,11 @@ body{
       &--shadow{
         box-shadow: 7px 7px 8px black;
         margin-bottom: 30px;
+      }
+      &__box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
   
 }
@@ -170,6 +215,10 @@ body{
 
 .paragraph{
   font-size: 18px;
+  text-align: justify;
+      &__box{
+        padding-left: 10px;
+      }
       &::first-letter{
       font-size: 24px;
       background: tomato;

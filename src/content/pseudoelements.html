@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Pseudoelements</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <style>
-    html {
+    /* html {
         background: rgb(135, 181, 224);
         font-family: Arial, Helvetica;
 
@@ -129,16 +130,19 @@
         color: white;
         border: 2px solid;
         margin-left: 5px;
-    }
+    } */
 </style>
-<div class="nav__box">
-    <ul class="nav__list">
-        <li><a class="nav__link" href="index.html">Homepage</a></li>
-        
-        <li><a class="nav__link" href="https://norbert-lukaszuk.github.io/homepage/pseudoelements.html">Pseudoelements on github</a></li>    
+<nav>
+        <ul class="navigationList navigationList--js">
+                    <li><a class="link__menu" href="index.html">Home Page</a></li>
+                    <li><a class="link__menu" href="forms.html">Forms</a></li>
+                    <li><a class="link__menu" href="nodejs&npm.html">Node.js & npm</a></li>
+                    <li><a class="link__menu" href="sass.html">SASS</a></li>
             
-    </ul>
-</div>
+        </ul>
+    
+    </nav>
+    <button class="menu__button menu__button--js">≡</button>
 <body>
 
     <h1 class="main__header">Pseudoelements</h1>
@@ -151,15 +155,15 @@
         wyświetlą.
     </p>
     <div class="image__box">
-        <img class="image" src="img/before&after.png" alt="Before & after elements code">
+        <img class="image image--shadow" src="assets/img/before&after.png" alt="Before & after elements code">
     </div>
     <hr>
     <h2 class="main__header">:hover</h2>
     <h2 class="hover__header">Hover cursor over this text and You will see it's changing his color</h2>
-    <p class="paragraph"><strong>:hover</strong> pozwala zmieniać właściwość elementu po najechaniu
+    <p class="paragraph">Pseudolement <strong>:hover</strong> pozwala zmieniać właściwość elementu po najechaniu
         na niego myszką np tak jak poniżej zmnienić kolor fontu.</p>
     <div class="image__box">
-        <img class="image" src="img/hover.png" alt="Hover code snippet">
+        <img class="image image--shadow" src="assets/img/hover.png" alt="Hover code snippet">
     </div>
     <hr>
     <h2 class="main__header">:first-child & :last-child</h2>
@@ -176,11 +180,11 @@
             <li class="listItem">List item 3</li>
             <li class="listItem">List item 4 --this is :last-child element</li>
         </ul>
-        <p class="paragraph paragraph__box"><strong>:first-child</strong> zmienia własności pierwszego elementu z danego
+        <p class="paragraph paragraph__box">Pseudoelement <strong>:first-child</strong> zmienia własności pierwszego elementu z danego
             bloku natomiast
             <strong>:last-child</strong>zmienia właściwości ostatniego elementu z bloku w tym przypadku listy</p>
         </div>
-        <div class="image__box"><img class="image" src="img/first&last-child.png" alt="First and last child element code snippet" ></div>    
+        <div class="image__box"><img class="image image--shadow" src="assets/img/first&last-child.png" alt="First and last child element code snippet" ></div>    
     
     <hr>
     <h2 class="main__header">:focus</h2>
@@ -190,10 +194,10 @@
         powinna się
         skupiać uwaga usera. Można też w inny sposób podkreślić w którym polu się znajdujemy.</p>
     <div class="image__box">
-        <img class="image" src="img/focus.png" alt="Focus Pseudoelement code snippet">
+        <img class="image image--shadow" src="assets/img/focus.png" alt="Focus Pseudoelement code snippet">
     </div>
     <hr>
 
 </body>
-
+    <script src="js/main.js"></script>
 </html>

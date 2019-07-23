@@ -1,11 +1,13 @@
 @import "_normalize";
-@import "_variables";
-@import "famousPeople";
-@import "forms";
+// @import "_variables";
+// @import "famousPeople";
+// @import "forms";
 
 
 
-
+html{
+  background-color: rgb(190, 187, 187)
+}
 
 body{
   max-width:960px;
@@ -92,6 +94,14 @@ body{
   grid-row: 4/5;
   grid-column: 3/5;
 }
+.link__menu{
+  text-decoration: none;
+  color: black;
+  &:hover{
+    color: white;
+  }
+ 
+}
 .menu__button{
   border: none;
   background: none;
@@ -129,7 +139,10 @@ body{
   display: flex;
   flex-direction: column;
   list-style: none;
+  padding: 15px 15px;
+  
 
   }
 }
+
 

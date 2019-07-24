@@ -1,72 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Main Page</title>
-    <link rel="stylesheet" href="css/main.css">
-    
-    </head>
-      <nav class="navigation">
-      <ul class="navigationList navigationList--js">
-        <li><a class="link__menu" href="index1.html">About me</a></li>
-        <li><a class="link__menu" href="nodejs&npm.html">Node.js & npm</a></li>
-        <li><a class="link__menu" href="forms.html">Forms</a></li>
-        <li><a class="link__menu" href="sass.html">SASS</a></li>
-        <li><a class="link__menu" href="pseudoelements.html">Pseudoelements</a></li>
-        <li><a class="link__menu" href="gulp.html">Gulp</a></li>
-        
-        <li><a class="link__menu" href="steveJobsFlex.html">Steve Jobs</a></li>
-        <li><a class="link__menu" href="jackTramiel.html">Jack Tramiel</a></li>
-        <li><a class="link__menu" href="billGates.html">Bill Gates</a></li>
-      </ul>
-      
-    
-    </nav>
-    <button class="menu__button menu__button--js">≡</button>
-    <body>
-      <h1>Main Page</h1>
-      <main>
-        <div class="grid">
-          <div class="one">header</div>
-          <div class="articles">
-            <h2>Articles</h2>
-            <div class="articles__grid">
-              <div class="articles__photo">
-                <img class="articles__photo--round" src="assets/img/linus torvalds 100x100px.jpg" alt="Linus Tornvalds photo">
-              </div>
-              <div class="articles__text">article#1</div>
-              <div class="articles__photo">
-                <img class="articles__photo--round" src="assets/img/jack tramiel 100x100px.jpg" alt="Jack Tramiel photo">
-              </div>
-              <div class="articles__text">article#2</div>
-              <div class="articles__photo">
-                <img class="articles__photo--round" src="assets/img/Bill Gates 100x100px.jpg" alt="Bill Gates photo">
-              </div>
-              <div class="articles__text">article#3</div>
-              <div class="articles__photo">
-                <img class="articles__photo--round" src="assets/img/steve jobs 100x100px.jpg" alt="Steve Jobs photo">
-              </div>
-              <div class="articles__text">article#4</div>
-              
-            </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Main Page</title>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<nav class="navigation">
+  <ul class="navigationList navigationList--js">
+    <li><a class="link__menu" href="index1.html">About me</a></li>
+    <li><a class="link__menu" href="nodejs&npm.html">Node.js & npm</a></li>
+    <li><a class="link__menu" href="forms.html">Forms</a></li>
+    <li><a class="link__menu" href="sass.html">SASS</a></li>
+    <li><a class="link__menu" href="pseudoelements.html">Pseudoelements</a></li>
+    <li><a class="link__menu" href="gulp.html">Gulp</a></li>
+
+    <li><a class="link__menu" href="steveJobsFlex.html">Steve Jobs</a></li>
+    <li><a class="link__menu" href="jackTramiel.html">Jack Tramiel</a></li>
+    <li><a class="link__menu" href="billGates.html">Bill Gates</a></li>
+  </ul>
+
+
+</nav>
+<button class="menu__button menu__button--js">≡</button>
+
+<body>
+
+  <h1 class="header1">Main Page</h1>
+  <main>
+    <div class="grid">
+      <div class="one">header</div>
+      <div class="articles">
+        <h2>Articles</h2>
+        <div class="articles__grid">
+          <div class="articles__photo">
+            <img class="articles__photo--round" src="assets/img/node-js-icon.png" alt="Node.js logo">
           </div>
-          <div class="sidebar">menu
-            <nav class="sidebar__navigation">
-              <ul class="navigation__items">
-                <li class="navigation__items--noStyle">Page 1</li>
-                <li class="navigation__items--noStyle">Page 2</li>
-                <li class="navigation__items--noStyle">Page 3</li>
-                <li class="navigation__items--noStyle">Page 4</li>
-              </ul>
-            </nav>
+          <div class="articles__text">As an asynchronous event driven JavaScript runtime, Node is designed to build
+            scalable network applications. In the following "hello world" example, many connections can be handled
+            concurrently. Upon each connection the callback is fired, but if there is no work to be done, Node will
+            sleep</div>
+          <div class="articles__photo">
+            <img class="articles__photo--round" src="assets/img/jack tramiel 100x100px.jpg" alt="Jack Tramiel photo">
           </div>
-          <div class="four">four</div>
-    
+          <div class="articles__text">article#2</div>
+          <div class="articles__photo">
+            <img class="articles__photo--round" src="assets/img/Bill Gates 100x100px.jpg" alt="Bill Gates photo">
+          </div>
+          <div class="articles__text">article#3</div>
+          <div class="articles__photo">
+            <img class="articles__photo--round" src="assets/img/steve jobs 100x100px.jpg" alt="Steve Jobs photo">
+          </div>
+          <div class="articles__text">article#4</div>
+
         </div>
-      </main>
-    </body>
-    <script src="js/main.js"></script>
-    
+      </div>
+      <div class="sidebar">menu
+        <nav class="sidebar__navigation">
+          <ul class="navigation__items">
+            <li class="navigation__items--noStyle">Page 1</li>
+            <li class="navigation__items--noStyle">Page 2</li>
+            <li class="navigation__items--noStyle">Page 3</li>
+            <li class="navigation__items--noStyle">Page 4</li>
+          </ul>
+        </nav>
+      </div>
+      <div class="four">four</div>
+
+    </div>
+  </main>
+
+</body>
+<script src="js/main.js"></script>
+
 </html>

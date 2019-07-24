@@ -129,6 +129,7 @@ body{
       padding: 20px 15px 5px 20px;
       margin: 0;
       line-height: 1.5;
+      letter-spacing: 2px;
        &::first-letter{
          padding-left: 20px;
         font-size: 22px;
@@ -160,18 +161,44 @@ body{
 .sidebar{
   display: flex;
   flex-direction: column;
-
+  align-items: flex-start;
   background: rgb(101, 216, 151);
   grid-column: 4/5;
   grid-row:2/4;
+      &__navigation{
+        list-style: none;
+        
+      }
       &__paragraph{
         font-size: 22px;
-        text-align: start;
+        text-align: center;
+        align-self: center;
 
       }
 }
-.title{
+.sidebarNavigation__list{
+  padding-inline-start: 0;
+  padding-left: 15px;
+  list-style: none;
+  
+}
+.sidebarNavigation__items--noStyle{
+  padding-bottom: 15px;
+}
+.sidebarNavigation__link{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
+  &--noStyle{
+    text-decoration: none;
+    font-weight: 800;
+    color:white;
+    letter-spacing: 2px;
+    &:hover{
+      color:tomato;
+    }
+}
 }
 .navigation__items{
   display: flex;
@@ -184,6 +211,7 @@ body{
     padding: 10px 10px;
   }
 }
+
 .four{
   background: rgb(101, 216, 151);
   grid-column: 4/5;;

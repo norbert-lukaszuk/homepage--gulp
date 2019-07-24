@@ -29,24 +29,39 @@
 
 <body>
 
-  <h1 class="header1">Main Page</h1>
+  
   <main>
     <div class="grid">
-      <div class="one">header</div>
+      <div class="one"><h1>Home Page</h1></div>
       <div class="articles">
         <h2>Articles</h2>
         <div class="articles__grid">
           <div class="articles__photo">
             <img class="articles__photo--round" src="assets/img/node-js-icon.png" alt="Node.js logo">
           </div>
-          <div class="articles__text">As an asynchronous event driven JavaScript runtime, Node is designed to build
-            scalable network applications. In the following "hello world" example, many connections can be handled
-            concurrently. Upon each connection the callback is fired, but if there is no work to be done, Node will
-            sleep</div>
-          <div class="articles__photo">
-            <img class="articles__photo--round" src="assets/img/jack tramiel 100x100px.jpg" alt="Jack Tramiel photo">
+          <div class="articles__text">
+            <p class="articles__text--paragraph">Node.js is an open-source, cross-platform JavaScript run-time
+              environment that
+              executes JavaScript code outside of a browser. Node.js lets developers use JavaScript to write command
+              line
+              tools and for server-side scripting—running scripts server-side to produce dynamic web page content before
+              the page is sent to the user's web browser. Consequently, Node.js represents a "JavaScript everywhere"
+              paradigm, unifying web application development around a single programming language, rather than
+              different languages for server- and client-side scripts.</p>
+            <a href="nodejs&npm.html" class="articles__text--link">Read more ...</a>
           </div>
-          <div class="articles__text">article#2</div>
+          <div class="articles__photo">
+            <img class="articles__photo--round" src="assets/img/gulp-icon.png" alt="Jack Tramiel photo">
+          </div>
+          <div class="articles__text">
+            <p class="articles__text--paragraph"> Gulp is an open-source JavaScript toolkit created by Eric
+              Schoffstall used as a streaming build system in front-end web development.
+              It is a task runner built on Node.js and npm, used for automation of time-consuming and repetitive tasks
+              involved in web development like minification, concatenation, cache busting, unit testing, linting,
+              optimization, etc. Gulp uses a code-over-configuration approach to define its tasks and relies on its small, single-purpose
+              plugins to carry them out. The gulp ecosystem includes more than 3500 such plugins. </p>
+              <a href="gulp.html" class="articles__text--link">Read more ...</a>
+          </div>
           <div class="articles__photo">
             <img class="articles__photo--round" src="assets/img/Bill Gates 100x100px.jpg" alt="Bill Gates photo">
           </div>
@@ -58,7 +73,7 @@
 
         </div>
       </div>
-      <div class="sidebar">menu
+      <div class="sidebar"><p class="sidebar__paragraph">Notes</p>
         <nav class="sidebar__navigation">
           <ul class="navigation__items">
             <li class="navigation__items--noStyle">Page 1</li>

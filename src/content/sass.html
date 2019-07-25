@@ -8,31 +8,39 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<nav>
-    <ul class="navigationList navigationList--js">
-				<li><a class="link__menu" href="index.html">Home Page</a></li>
-				<li><a class="link__menu" href="forms.html">Forms</a></li>
-        
-    </ul>
 
-</nav>
-<button class="menu__button menu__button--js">≡</button>
+<nav class="mainNavigation">
+        <ul class="mainNavigation__list">
+        <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+        <li><a href="html.html" class="mainNavigation__link">HTML</a></li>
+        <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+        <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+        <li><a href="git.html" class="mainNavigation__link">Git</a></li>
+    </ul></nav>
 <body>
     <h1>SASS</h1>
     <p class="paragraph"><strong>SASS</strong> służy do budowania złożonych stylów. <br> 
     Możemy definiować zmienne przy użyciu znaku <b class="bolder">$</b>.
     </p>
-    <img src="assets/img/sass $.png" >
+    <div class="image__box">
+            <img class="image image--shadow" src="assets/img/sass $.png" >
+    </div>
+    
     <p class="paragraph">Funkcja <b class="bolder">@mixin</b> tworzy zestaw reguł CSS w formie funcji , którą możemy wywołać
     przez <b class="bolder">@include</b>.
     </p>
-    <img src="assets/img/@mixin @include.png" alt="@mixin & $include">
+    <div class="image__box"><img class="image image--shadow" src="assets/img/@mixin @include.png" alt="@mixin & $include"></div>
+    
     <p class="paragraph">Funkcję <b class="bolder">@mixin</b> możemy także zdefiniować z parametrami, które podamy wywołując 
     funkcję za pomocą <b class="bolder">@include</b>.
     </p>
-    <img src="assets/img/@mixin @include with parametr.png" alt="">
+    <div class="image__box"><img class="image image--shadow" src="assets/img/@mixin @include with parametr.png" alt=""></div>
+    
     <p class="paragraph">Parent selector <b class="bolder">&</b> pozwala tworzyć nowe klasy będące dziećmi klas wyższych. </p>
-    <img src="assets/img/& parent selector.png">
+    <div class="image__box"><img class="image image--shadow" src="assets/img/& parent selector.png" alt=""></div>
+  
+
+
 </body>
 <script src="js/main.js"></script>
 </html>

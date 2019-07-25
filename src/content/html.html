@@ -7,7 +7,117 @@
     <title>HTML</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
+<nav class="mainNavigation">
+    <ul class="mainNavigation__list">
+    <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+    <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+    <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+    <li><a href="sass.html" class="mainNavigation__link">SASS</a></li>
+</ul></nav>
+
 <body>
     
+        <h1 class="header1">FORMS</h1>
+        <form action="https://dev.cotenfrontend.pl" method="POST">
+            <label for="userName">Plaese enter User Name</label><br><br>
+            <input type="text" id="userName" name="userName" placeholder=" user name"><br><br>
+    
+            <label for="password">Please eneter password</label><br><br>
+            <input type="password" name="password" id="password" placeholder=" password"><br><br>
+            <label for="email">Please eneter your email</label><br><br>
+            <input type="email" name="email" id="email" placeholder="email adress"><br><br>
+            <hr>
+            <p>Slect your age range:</p>
+            <input type="radio" name="age" id="option-1" value="7-18 years">
+            <label for="option-1">7-18 years</label><br>
+            <input type="radio" name="age" id="option-2" value="19-30 years" checked>
+            <label for="option-2">19-30 years</label><br>
+            <input type="radio" name="age" id="option-3" value="31-40 years">
+            <label for="option-3">31-40 years</label><br>
+            <input type="radio" name="age" id="option-4" value="40+ years">
+            <label for="option-4">40+ years</label><br>
+            <hr>
+            <p>Please select your options</p>
+            <input type="checkbox" name="checkbox1" id="checkbox1">
+            <label for="checkbox1">Option 1</label><br>
+            <input type="checkbox" name="checkbox2" id="checkbox2">
+            <label for="checkbox2">Option 2</label><br>
+            <input type="checkbox" name="checkbox3" id="checkbox3">
+            <label for="checkbox3">Option 3</label><br>
+            <hr>
+            <label for="questions">Select the helping question:</label><br><br>
+            <select name="question" id="question">
+                <option value="q1">Whats your dog name?</option>
+                <option value="q2">Whats you bestfriends name ?</option>
+            </select><br><br>
+            <input type="text" id="answer" name="answer" placeholder="Enter your answer here"><br><br>
+            <hr>
+            <p>Select value in range</p>
+            <input type="range" name="range" id="range" min="1" max="100" step="1" value="10">
+            <hr>
+            <p>Please slect an image for your avatar (only .jpg or .png files)</p>
+            <input type="file" name="avatar" id="avatar" accept=".jpg, .png" multiple>
+            <hr>
+    
+            <label for="description">Write somethig about yourself:</label><br><br>
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Start typing :)"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+<hr>
+    <h1 class="main__header">Pseudoelements</h1>
+    <h2 class="main__header">::before and ::after</h2>
+    <h2 class="second__header">This is the text that is sorounded by the elements</h2>
+    <p class="paragraph">Pseudoelement <strong>::before</strong> lub <strong>::after</strong> umieszcza się bezpośrednio
+        przed blokiem lub
+        za nim i może być dowolniestylowany. Zawartość tych pseudoelementów jest wpisywana przez własność
+        <strong>content:" ";</strong> może ona być pusta ale jest obowiązkowa bo bez tego pseudoelementy się nie
+        wyświetlą.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/before&after.png" alt="Before & after elements code">
+    </div>
+    <hr>
+    <h2 class="main__header">:hover</h2>
+    <h2 class="hover__header">Hover cursor over this text and You will see it's changing his color</h2>
+    <p class="paragraph">Pseudolement <strong>:hover</strong> pozwala zmieniać właściwość elementu po najechaniu
+        na niego myszką np tak jak poniżej zmnienić kolor fontu.</p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/hover.png" alt="Hover code snippet">
+    </div>
+    <hr>
+    <h2 class="main__header">:first-child & :last-child</h2>
+    <div class="list__box">
+        <ul class="list">LIST
+            <li class="listItem">List item 1 --this is :first-child element</li>
+            <li class="listItem">List item 2
+                <ul>
+                    <li class="listItem">List item 1 --this is :first-child element </li>
+                    <li class="listItem">List item 2</li>
+                    <li class="listItem">List item 3 --this is :last-child element</li>
+                </ul>
+            </li>
+            <li class="listItem">List item 3</li>
+            <li class="listItem">List item 4 --this is :last-child element</li>
+        </ul>
+        <p class="paragraph paragraph__box">Pseudoelement <strong>:first-child</strong> zmienia własności pierwszego elementu z danego
+            bloku natomiast
+            <strong>:last-child</strong>zmienia właściwości ostatniego elementu z bloku w tym przypadku listy</p>
+        </div>
+        <div class="image__box"><img class="image image--shadow" src="assets/img/first&last-child.png" alt="First and last child element code snippet" ></div>    
+    
+    <hr>
+    <h2 class="main__header">:focus</h2>
+    <label for="input1">Please type Your name to see how <strong>:focus</strong> element works:</label><br><br>
+    <input class="input" type="text" name="input1" id="input1" placeholder="your name">
+    <p class="paragrap">W momencie kliknięcia na pole inputu tworzy się ramka i zmienia się tło aby podkreślić gdzie
+        powinna się
+        skupiać uwaga usera. Można też w inny sposób podkreślić w którym polu się znajdujemy.</p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/focus.png" alt="Focus Pseudoelement code snippet">
+    </div>
+    <hr>
+
+
 </body>
 </html>

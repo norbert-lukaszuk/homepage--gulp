@@ -260,8 +260,10 @@ html{
     &:hover{
       color:tomato;
     }
+    
 }
 }
+
 span{
   min-width: 102px;
 }
@@ -378,9 +380,12 @@ span{
 }
 @media (max-width: 640px){
  .articles{
-   grid-column: 2/5;
+   grid-column: 1/5;
    &__photo{
      display: none;
+   }
+   &__text{
+     grid-column: 1/5;
    }
   
  }

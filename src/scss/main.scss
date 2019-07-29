@@ -152,10 +152,16 @@ html{
 }
 
   
-.one{
+.siteHeader{
   
   background: rgb(101, 216, 151);
   grid-column: 1/5;
+
+  &__mobileMenu{
+    display: none;
+    flex-direction: row;
+    justify-content:center; 
+  }
 }
 .articles{
   background: rgb(101, 216, 151);;
@@ -257,11 +263,18 @@ html{
     font-weight: 800;
     color:white;
     letter-spacing: 2px;
+    margin-right: 5px;
     &:hover{
       color:tomato;
-    }
-    
+    }  
 }
+    &--mobile{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+    }
 }
 
 span{
@@ -399,9 +412,11 @@ span{
       
       display: flex;
       flex-direction: column;
-      list-style: none;
-      
+      list-style: none; 
   
+  }
+  .siteHeader__mobileMenu{
+    display: flex;
   }
   
   .sidebar{

@@ -7,6 +7,10 @@ $greenColor: rgb(101, 216, 151);
 #button{
   
 }
+body{
+  max-width: 960px;
+  margin: 0 auto;
+}
 html{
   background-color: rgb(190, 187, 187);
   font-family: Arial, Helvetica;
@@ -214,6 +218,11 @@ html{
 
 }
 
+.second__header{
+  text-align: center;
+  font-weight: 900;
+  font-size: 30px;
+}
 .sidebar{
   display: flex;
   flex-direction: column;

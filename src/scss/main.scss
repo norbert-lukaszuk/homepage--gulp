@@ -10,16 +10,9 @@ $greenColor: rgb(101, 216, 151);
 html{
   background-color: rgb(190, 187, 187);
   font-family: Arial, Helvetica;
-  
-  
+ 
 }
 
-// body{
-//   max-width:960px;
-//    margin: 0 auto;
-//    padding-top: 50px;
-  
-// }
 .bold {
   color: brown;
   font-size: 22px;
@@ -58,6 +51,7 @@ html{
 
 .input {
   font-weight: bold;
+  margin-left: 10px;
   &:focus{
     border: red 2px solid;
     background: greenyellow;
@@ -90,7 +84,9 @@ html{
   background: greenyellow;
   
 }
-
+.main__header{
+  text-align: center;
+}
 
 .mainNavigation{
   grid-column: 1/3;  
@@ -109,7 +105,7 @@ html{
     
     &__link{
       text-decoration: none;
-      color: black;
+      color:white;
       font-weight: 700;
       // padding: 0 50px;
 
@@ -133,8 +129,6 @@ html{
   }
 
 }
-
-
 
 .image{
   display: flex;
@@ -219,11 +213,6 @@ html{
   }
 
 }
-
-
-
-
-
 
 .sidebar{
   display: flex;
@@ -321,6 +310,9 @@ span{
  
 }
 .menu__button{
+  position: absolute;
+  right: 5px;
+  color: white;
   border: none;
   background: none;
   width: 40px;
@@ -333,7 +325,7 @@ span{
 
   }
   &:hover{
-    color:white;
+    color:tomato;
 
   }
 }
@@ -344,9 +336,7 @@ span{
   /* border-style: solid; */
   border-radius: 20px;
   margin: 0 10px;
-  
-  
-  
+
 }
 .navigationList{
   display: none;
@@ -366,6 +356,7 @@ span{
 .paragraph{
   font-size: 18px;
   text-align: justify;
+  padding: 0 5px;
       &__box{
         padding-left: 10px;
       }
@@ -383,10 +374,6 @@ span{
       border: black solid;
     }
 }
-
-
-  
-  
 
 @media (min-width: 641px){
   
@@ -406,10 +393,11 @@ span{
   
  }
   .mainNavigation{
-    border: solid black 2px; 
+   
       &__list{
         flex-direction: column;
         display: none;
+        color: white;
         // element --visible musi chyba być w tym mediaquery inaczej nie działa!!!
           &--visible{
             display: flex;
@@ -421,9 +409,7 @@ span{
 
 
   }
- 
 
-  
   .siteHeader__mobileMenu{
     display: flex;
   }

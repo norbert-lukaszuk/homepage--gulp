@@ -7,16 +7,58 @@
     <title>Java Script</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<div class="mainNavigation">
-    <nav>
-            <ul class="mainNavigation__list">
-            <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
-            <li>HTML</li>
-            <li>Git</li>
-            <li>SASS</li>
-        </ul></nav>
+<div class="navbox">
+    <nav class="mainNavigation">
+      <ul class="mainNavigation__list mainNavigation__list--js">
+        <li><a class="mainNavigation__link" href="index.html">Home Page</a></li>
+        <li><a class="mainNavigation__link" href="nodejs&npm.html">Node.js & npm</a></li>
+        <li><a class="mainNavigation__link" href="forms.html">Forms</a></li>
+        <li><a class="mainNavigation__link" href="sass.html">SASS</a></li>
+        <li><a class="mainNavigation__link" href="pseudoelements.html">Pseudoelements</a></li>
+        <li><a class="mainNavigation__link" href="gulp.html">Gulp</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
     </div>
 <body>
-    
+    <h1 class="main__header">Tablice / Arrays</h1> 
+<p class="paragraph">Tablice są to struktury danych, które zawierają w sobie wiele elementów
+    różnego typu. Mogą to być stringi, liczby a nawet obiekty umieszczone razem w jednej tablicy.
+    Poszczególne elementy tablicy są oddzielone od siebie przecinkami a sama tablica zawiera się 
+    między dwoma nawiasami kwadratowymi <b>"[ ]"</b>.
+</p>
+<div class="image__box">
+<img class="image image--shadow" src="assets/img/js array 1.png" alt="">
+</div>
+<p class="paragraph">Do każdego elementu z tablicy możemy się dostać podając jej nazwę i pozycję elementu
+    w kwadratowych nawiasach numerujemy od zera czyli <b>[element 0, element 1, element 2, ...]</b>
+</p>
+<div class="image__box">
+    <img class="image image--shadow" src="assets/img/js array 2.png" alt="">
+    </div>
+<p class="paragraph">Możemy także sprawdzić ile elementów znajduje się w tablicy, wykonujemy to poleceniem <b>.length</b>
+    przed którym bezpośrednio podajemy nazwę tablicy np. <b>myArray.length</b>.
+</p>
+<div class="image__box">
+    <img class="image image--shadow" src="assets/img/js array 3.png" alt="">
+    </div>
+
+<p class="paragraph">Tekst zapisany w cudzysłowiu <b>" "</b> jest traktowany jako tablica znaków w związku ztym możemy się dostać 
+    do każdego znaku będącego elementem tablicy. Możemy także szybko sprawdzić długość tekstu za pomocą wspomnianej wyżej metody
+    <b>.length</b>.
+</p>
+<div class="image__box">
+    <img class="image image--shadow" src="assets/img/js array 4.png" alt="">
+    </div>
+<p class="paragraph">Do tablic możemy także dodawać elementy na ich początku lub końcu używając metod <b>.push</b> kiedy chcemy dodać na 
+    początku tablicy i <b>.unshift</b> gdy element ma się znaleść na końcu tablicy.
+</p>
+<div class="image__box">
+    <img class="image image--shadow" src="assets/img/js array 5.png" alt="">
+    </div>
 </body>
+
+<script src="js/main.js"></script>
 </html>

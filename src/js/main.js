@@ -8,4 +8,5 @@ menuButton.addEventListener('click',(e)=>{
        
     
 });
+let myArray=[12,'bla bla', 888, 'mural', 'ohm']
 

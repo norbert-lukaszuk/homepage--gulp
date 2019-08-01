@@ -8,12 +8,14 @@ $greenColor: rgb(101, 216, 151);
   
 }
 body{
+  
   max-width: 960px;
   margin: 0 auto;
 }
 html{
   background-color: rgb(190, 187, 187);
   font-family: Arial, Helvetica;
+  
  
 }
 
@@ -28,11 +30,19 @@ html{
 .buttonWraper{
   background: $greenColor;
 }
+.flexBox{
+  display: flex;
+  flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  justify-items: center;
+}
 .form{
   display: flex;
   flex-direction: column;
   align-items:center;
 }
+
 .grid{
   display: grid;
   grid-template-columns: 2fr 2fr 30px 1fr;
@@ -135,11 +145,12 @@ html{
 }
 
 .image{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  // left: 50px;
+  // flex-direction: column;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  // align-items: center;
       &--shadow{
         box-shadow: 7px 7px 8px black;
         margin-bottom: 30px;
@@ -147,7 +158,9 @@ html{
       &__box{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        align-content: center;
       }
   
 }
@@ -392,7 +405,8 @@ span{
    }  
 }
 @media (max-width: 640px){
- .articles{
+ 
+  .articles{
    grid-column: 1/5;
    &__photo{
      display: none;
@@ -402,6 +416,7 @@ span{
    }
   
  }
+
   .mainNavigation{
    
       &__list{
@@ -419,12 +434,19 @@ span{
 
 
   }
-
+  .paragraph{
+    width: 467px;
+  }
   .siteHeader__mobileMenu{
     display: flex;
   }
   
   .sidebar{
     display: none;
+  }
+  .image{
+    position: relative;
+    left: 55px;
+    width: 125%;
   }
   }

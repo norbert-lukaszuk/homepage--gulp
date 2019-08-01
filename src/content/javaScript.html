@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,86 +10,102 @@
 </head>
 <div class="navbox">
     <nav class="mainNavigation">
-      <ul class="mainNavigation__list mainNavigation__list--js">
-        <li><a class="mainNavigation__link" href="index.html">Home Page</a></li>
-        <li><a class="mainNavigation__link" href="nodejs&npm.html">Node.js & npm</a></li>
-        <li><a class="mainNavigation__link" href="forms.html">Forms</a></li>
-        <li><a class="mainNavigation__link" href="sass.html">SASS</a></li>
-        <li><a class="mainNavigation__link" href="pseudoelements.html">Pseudoelements</a></li>
-        <li><a class="mainNavigation__link" href="gulp.html">Gulp</a></li>
+        <ul class="mainNavigation__list mainNavigation__list--js">
+            <li><a class="mainNavigation__link" href="index.html">Home Page</a></li>
+            <li><a class="mainNavigation__link" href="nodejs&npm.html">Node.js & npm</a></li>
+            <li><a class="mainNavigation__link" href="forms.html">Forms</a></li>
+            <li><a class="mainNavigation__link" href="sass.html">SASS</a></li>
+            <li><a class="mainNavigation__link" href="pseudoelements.html">Pseudoelements</a></li>
+            <li><a class="mainNavigation__link" href="gulp.html">Gulp</a></li>
         </ul>
-      </nav>
-    </div>
-    <div class="buttonWraper">
-    <button id="button" class="menu__button menu__button--js">≡</button>
-    </div>
-<body>
-    <h1 class="main__header">Tablice / Arrays</h1> 
-<p class="paragraph">Tablice są to struktury danych, które zawierają w sobie wiele elementów
-    różnego typu. Mogą to być stringi, liczby a nawet obiekty umieszczone razem w jednej tablicy.
-    Poszczególne elementy tablicy są oddzielone od siebie przecinkami a sama tablica zawiera się 
-    między dwoma nawiasami kwadratowymi <b>"[ ]"</b>.
-</p>
-<div class="image__box">
-<img class="image image--shadow" src="assets/img/js array 1.png" alt="">
+    </nav>
 </div>
-<p class="paragraph">Do każdego elementu z tablicy możemy się dostać podając jej nazwę i pozycję elementu
-    w kwadratowych nawiasach numerujemy od zera czyli <b>[element 0, element 1, element 2, ...]</b>
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 2.png" alt="">
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+
+<body>
+    <div class="flexBox">
+    <h1 class="main__header">Tablice / Arrays</h1>
+    <p class="paragraph">Tablice są to struktury danych, które zawierają w sobie wiele elementów
+        różnego typu. Mogą to być stringi, liczby a nawet obiekty umieszczone razem w jednej tablicy.
+        Poszczególne elementy tablicy są oddzielone od siebie przecinkami a sama tablica zawiera się
+        między dwoma nawiasami kwadratowymi <b>"[ ]"</b>.
+    </p>
+     <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 1.png" alt="">
+	</div>
+		
+    <p class="paragraph">Do każdego elementu z tablicy możemy się dostać podając jej nazwę i pozycję elementu
+        w kwadratowych nawiasach numerujemy od zera czyli <b>[element 0, element 1, element 2, ...]</b>
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 2.png" alt="">
     </div>
-<p class="paragraph">Możemy także sprawdzić ile elementów znajduje się w tablicy, wykonujemy to poleceniem <b>.length</b>
-    przed którym bezpośrednio podajemy nazwę tablicy np. <b>myArray.length</b>.
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 3.png" alt="">
+    <p class="paragraph">Możemy także sprawdzić ile elementów znajduje się w tablicy, wykonujemy to poleceniem
+        <b>.length</b>
+        przed którym bezpośrednio podajemy nazwę tablicy np. <b>myArray.length</b>.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 3.png" alt="">
     </div>
 
-<p class="paragraph">Tekst zapisany w cudzysłowiu <b>" "</b> jest traktowany jako tablica znaków w związku ztym możemy się dostać 
-    do każdego znaku będącego elementem tablicy. Możemy także szybko sprawdzić długość tekstu za pomocą wspomnianej wyżej metody
-    <b>.length</b>.
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 4.png" alt="">
+    <p class="paragraph">Tekst zapisany w cudzysłowiu <b>" "</b> jest traktowany jako tablica znaków w związku ztym
+        możemy się dostać
+        do każdego znaku będącego elementem tablicy. Możemy także szybko sprawdzić długość tekstu za pomocą wspomnianej
+        wyżej metody
+        <b>.length</b>.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 4.png" alt="">
     </div>
-<p class="paragraph">Do tablic możemy także dodawać elementy na ich początku lub końcu używając metod <b>.push</b> kiedy chcemy dodać na 
-    początku tablicy i <b>.unshift</b> gdy element ma się znaleść na końcu tablicy.
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 5.png" alt="">
+    <p class="paragraph">Do tablic możemy także dodawać elementy na ich początku lub końcu używając metod <b>.push</b>
+        kiedy chcemy dodać na
+        początku tablicy i <b>.unshift</b> gdy element ma się znaleść na końcu tablicy.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 5.png" alt="">
     </div>
-<p class="paragraph">Usuwanie elementu z początku tablicy wykonujemy używając <b>.shift()</b> nie podając rzadnego argumentu natomiast 
-    usunąc element z końca tablicy możemy za pomocą<b>.pop()</b>
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 6.png" alt="">
+    <p class="paragraph">Usuwanie elementu z początku tablicy wykonujemy używając <b>.shift()</b> nie podając rzadnego
+        argumentu natomiast
+        usunąc element z końca tablicy możemy za pomocą<b>.pop()</b>
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 6.png" alt="">
     </div>
 
-<p class="paragraph">Aby usunąć więcej elementów w danym zakresie użyjemy metody <b>.splice(index, liczbaElementów)</b> gdzie index oznacza
-    miejsce od którego należy zacząć wycinać a liczba elementów to poprostu licza elementów które mają być usunięte.
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 7.png" alt="">
+    <p class="paragraph">Aby usunąć więcej elementów w danym zakresie użyjemy metody <b>.splice(index,
+            liczbaElementów)</b> gdzie index oznacza
+        miejsce od którego należy zacząć wycinać a liczba elementów to poprostu licza elementów które mają być usunięte.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 7.png" alt="">
     </div>
-<p class="paragraph">Pobieranie konkretnego wycinka z całej tablicy robimy metodą <b>.slice(index,stop)</b> gdzie index
-    to element od którego ma się zacząć wycinanie a stop to miejsce gdzie ma się skończyć.
-</p>
-<div class="image__box">
-    <img class="image image--shadow" src="assets/img/js array 8.png" alt="">
+    <p class="paragraph">Pobieranie konkretnego wycinka z całej tablicy robimy metodą <b>.slice(index,stop)</b> gdzie
+        index
+        to element od którego ma się zacząć wycinanie a stop to miejsce gdzie ma się skończyć.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js array 8.png" alt="">
     </div>
-<h1 class="main__header">Pętle / Loops</h1>
-<h2 class="second__header">Pętla for</h2>
-    <p class="paragraph">Najczęściej wykorzystywaną pętlą jest właśnie pętla <b>for</b> wykonuje się ona do momentu osiągniecia założonego warunku
-    "zatrzymującego" a kolejne przejścia przez pętlę powodują iterację wyrażenia, które jest właśnie warunkiem zatrzymującym.
+    <h1 class="main__header">Pętle / Loops</h1>
+    <h2 class="second__header">Pętla for</h2>
+    <p class="paragraph">Najczęściej wykorzystywaną pętlą jest właśnie pętla <b>for</b> wykonuje się ona do momentu
+        osiągniecia założonego warunku
+        "zatrzymującego" a kolejne przejścia przez pętlę powodują iterację wyrażenia, które jest właśnie warunkiem
+        zatrzymującym.
     </p>
     <div class="image__box">
         <img class="image image--shadow" src="assets/img/for loop 1.png" alt="">
-        </div>
-   <p class="paragraph">W wyżej widocznym przykładzie warunek <b>i = 0</b> jest inicjalizacją pętli, <b>i < myArray.length</b> jest warynkiem stopującym dalsze 
-    wykonywanie pętli (.length zwraca ile jest elementów w tablicy) natomiast <b>i++</b> jest wyrażeniem inkrementującym pozwalającym określić ile powtórzeń zostało wykonanych.
-    Zadaniem tej pętli było wypisanie po koleji elementów tablicy myArrey przy użyciu console.log a do 
-</p> 
+    </div>
+    <p class="paragraph">W wyżej widocznym przykładzie warunek <b>i = 0</b> jest inicjalizacją pętli, <b>i <
+                myArray.length</b> jest warynkiem stopującym dalsze wykonywanie pętli (.length zwraca ile jest elementów
+                w tablicy) natomiast <b>i++</b> jest wyrażeniem inkrementującym pozwalającym określić ile powtórzeń
+                zostało wykonanych.
+                Zadaniem tej pętli było wypisanie po koleji elementów tablicy myArrey przy użyciu console.log a do
+    </p>
+</div>
 </body>
 <script src="js/main.js"></script>
+
 </html>

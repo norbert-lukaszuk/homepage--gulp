@@ -13,3 +13,7 @@ const object={name:'Eduardo', nationality:'Mexican', forname:'Sanchez'}
 for(let propertyName in object)
 {console.log(`${propertyName}:${object[propertyName]}`)}
 
+document.cookie ="cookie#1 = bla bla bla";
+document.cookie ="cookie#2 = bum cyk cyk";
+
+

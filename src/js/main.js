@@ -17,3 +17,4 @@ document.cookie ="cookie#1 = bla bla bla";
 document.cookie ="cookie#2 = bum cyk cyk";
 
 
+for(i=0;i<10;i++){localStorage.setItem(`element nr ${i}`,`wartość nr ${i+6}`)};

@@ -98,6 +98,21 @@ html{
   background: greenyellow;
   
 }
+.localStorage{
+  &__list{
+    list-style: none;
+    font-size: 20px;
+    padding-left: 5px;
+    & li{
+      padding-bottom: 10px;
+    }
+    & li::first-letter{
+      font-size: 24px;
+      background: tomato;
+    }
+  }
+  
+}
 .main__header{
   text-align: center;
 }

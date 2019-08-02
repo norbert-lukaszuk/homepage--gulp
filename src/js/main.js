@@ -9,4 +9,7 @@ menuButton.addEventListener('click',(e)=>{
     
 });
 let myArray=['pi',12,'bla bla', 888, 'mural', 'ohm', 'korniszon']
+const object={name:'Eduardo', nationality:'Mexican', forname:'Sanchez'}
+for(let propertyName in object)
+{console.log(`${propertyName}:${object[propertyName]}`)}
 

@@ -147,8 +147,16 @@ poszczególnych elementów tablicy</p>
     <li>Tworzenie elementu <b><i>localStorage.setItem('nazwa',wrtość)</i></b></li>
     <li>Pobieranie elementu <b><i>localStorage.getItem('nazwa')</i></b></li>
     <li>Usuwanie elementu <b><i>localStorage.removeItem('nazwa')</i></b></li>
-    
 </ul>
+<h2 class="second__header">Dodawanie obiektu do Local storage</h2>
+
+<p class="paragraph">Nie możemy dodawać obiektu bezpośrednio do Local storage, musimy najpierw zamienić go na string typu JSON. Użwamy do tego metody 
+    <b><i>JSON.strigify(obiekt)</i></b>. W sytuacji odwrotnej pobieramy string z Local storage i zamieniamy (parsujemy) go do formy obiektu przy użyciu 
+    metody <b><i>JSON.parse(stringJSON)</i></b>. 
+</p>
+<div class="image__box">
+        <img class="image image--shadow" src="assets/img/js dataStorage 4.png" alt="">
+      </div>
 </body>
 <script src="js/main.js"></script>
 

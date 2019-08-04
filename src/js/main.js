@@ -9,12 +9,27 @@ menuButton.addEventListener('click',(e)=>{
     
 });
 let myArray=['pi',12,'bla bla', 888, 'mural', 'ohm', 'korniszon']
-const object={name:'Eduardo', nationality:'Mexican', forname:'Sanchez'}
-for(let propertyName in object)
-{console.log(`${propertyName}:${object[propertyName]}`)}
+
+
 
 document.cookie ="cookie#1 = bla bla bla";
 document.cookie ="cookie#2 = bum cyk cyk";
 
-
+//tworzymy dziesięć elementów do loacalStorage
 for(i=0;i<10;i++){localStorage.setItem(`element nr ${i}`,`wartość nr ${i+6}`)};
+// Tworzymy obiekt o nazwie "obiekt" :)
+const object={name:'Eduardo', nationality:'Mexican', forname:'Sanchez'}
+// Zamienieniamy obiekt na string JSONowy za pomocą metody JSON.stringify
+const objectStringify = JSON.stringify(object);
+// Wypisujemy utworzonego stringa w konsoli
+console.log(objectStringify);
+// Dodajemy stringa do laocalStorage pod nazwą obiekt
+// Robimy to bo nie możemy dodawać obiektów do localStorage
+localStorage.setItem('objectLocal',objectStringify);
+// Pobieramy do zmiennej "objectJSON" string "objectLocal" 
+const objectJSON = localStorage.getItem('objectLocal');
+// Przekształcamy z powrotem stringa w obiekt przy pomocy JSON.parse
+const objectPars = JSON.parse(objectJSON);
+
+for(let propertyName in object)
+{console.log(`${propertyName}:${object[propertyName]}`)}

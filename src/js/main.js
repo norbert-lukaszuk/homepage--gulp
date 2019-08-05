@@ -33,3 +33,11 @@ const objectPars = JSON.parse(objectJSON);
 
 for(let propertyName in object)
 {console.log(`${propertyName}:${object[propertyName]}`)}
+
+const inputLS = document.querySelector('.inputLocalStorage');
+if (localStorage.getItem('input').length > 0){
+    inputLS.value = localStorage.getItem('input')
+}
+
+inputLS.addEventListener('keyup',(e) => {console.log(e.target.value)})
+inputLS.addEventListener('keyup',(e) => {localStorage.setItem('input',e.target.value)})

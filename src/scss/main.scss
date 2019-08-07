@@ -7,6 +7,11 @@ $greenColor: rgb(101, 216, 151);
 #button{
   
 }
+#editor__link{
+  text-decoration: none;
+  color:black;
+  font-weight: 600;
+}
 body{
   
   max-width: 960px;
@@ -51,7 +56,11 @@ html{
   &__method{
     color: rgb(243, 243, 71);
   }
+  &__comment{
+    color: rgb(81, 153, 81);
+  }
 }
+
 .flexBox{
   display: flex;
   flex-direction: column;

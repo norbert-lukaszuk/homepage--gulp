@@ -163,17 +163,21 @@ poszczególnych elementów tablicy</p>
 <h2 class="second__header">Simple editor</h2>
 <p class="paragraph">Zadaniem tego protego edytora jest przyjęcie tekstu z input i zapisanie go w local storage po kliknięciu buttona save. Następnie po
     po kliknięciu w button 'load' wypisanie tego tesktu w textarea, w którym wcześniej wpisywaliśmy tekst do zapisania.
+    Edytor znajduje się <a id="editor__link" href="https://norbert-lukaszuk.github.io/simple-editor/">tutaj</a>...
 </p>
 <p class="code">
+    <span class="code__comment">// Zapisuje w zmiennej input wpisywany w textarea</span><br>
     <span class="code__const">const</span> inputLS = <span class="code__querySelector">document.querySelector</span>('.textArea');<br>
 
-
+<span class="code__comment">// Przypisuje do zmiennych buttony na podstawie ich klas z modyfikarem '--js'</span><br>
 <span class="code__const">const</span> loadButton = <span class="code__querySelector">document.querySelector</span>(<span class="code__class"> '.buttons__load--js'</span>);<br>
 <span class="code__const">const</span> saveButton = <span class="code__querySelector">document.querySelector</span>(<span class="code__class"> '.buttons__save--js'</span>);<br>
-
+<span class="code__comment">// Nasłuchuje klikniecia load button i wypisuje przez '.innerHTML' pobrane z localStorage dane jeśli są zapiane</span><br>
 loadButton.addEventListener('click', (e)=>{inputLS <span class="code__method">.innerHTML</span>=(localStorage<span class="code__method">.getItem</span>('inputTextArea'))});<br>
+<span class="code__comment">// Nasłuchuje klikniecia load button i wypisuje przez '.innerHTML' pobrane z localStorage dane jeśli są zapiane</span><br>
 saveButton.addEventListener('click',(e)=>{localStorage<span class="code__method">.setItem</span>('inputTextArea',inputLS<span class="code__method">.value</span>)})<br>
-
+<span class="code__comment">// Nasłuchuje kliknięcia w clear button po czym czyści zawartość localStorage metodą '.clear()'</span><br>
+clearButton.addEventListener('click',(e)=>{localStorage <span class="code__method">.clear()</span>});<br>
 </p>
 </body>
 <script src="js/main.js"></script>

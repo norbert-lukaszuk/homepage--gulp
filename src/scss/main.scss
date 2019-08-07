@@ -30,6 +30,28 @@ html{
 .buttonWraper{
   background: $greenColor;
 }
+.code{
+  background-color: black;
+  color: white;
+  font-weight: 100;
+  line-height: 1.5;
+  font-family: Helvetica, sans-serif;
+  padding-left: 15px;
+  box-shadow: 7px 7px 8px black;
+  
+  &__const{
+    color: aqua;
+  }
+  &__querySelector{
+    color: yellowgreen;
+  }
+  &__class{
+    color: tomato;
+  }
+  &__method{
+    color: rgb(243, 243, 71);
+  }
+}
 .flexBox{
   display: flex;
   flex-direction: column;

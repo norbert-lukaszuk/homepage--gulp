@@ -32,9 +32,84 @@ html{
   color:tomato;
   font-size: 21px;
 }
+.button{
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  justify-content: center;
+}
 .buttonWraper{
   background: $greenColor;
 }
+.buttonTransition{
+  background-color: gray;
+  width: 130px;
+  height: 80px;
+  border: none;
+  margin-right: 15px;
+  transition: background-color .5s linear, color .6s ease-in-out;
+  
+  &:hover{
+    background-color: greenyellow;
+    color: white;
+  }
+}
+  .buttonTransition__willChange{
+      background-color: gray;
+      width: 130px;
+      height: 80px;
+      border: none;
+      transition: background-color .5s linear, color .6s ease-in-out;
+      will-change: background-color;
+        &:hover{
+          background-color: greenyellow;
+          color: white;
+          width: 130px;
+          height: 80px;
+          border: none;
+        }
+      }
+
+.buttonTransform{
+  
+  &__rotate{
+  width: 130px;
+  height: 80px;
+  border: none;
+  margin-right: 15px;
+  background-color: aqua;
+  transition: transform .7s linear;
+  &:hover{
+    transform: rotate(180deg);
+    }
+  }
+  &__scale{
+    width: 130px;
+    height: 80px;
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(89, 91, 224);
+    transition: transform .7s linear;
+    &:hover{
+      transform: scale(2);
+      }
+  }
+  &__move{
+    width: 130px;
+    height: 80px;
+    border: none;
+    margin-right: 15px;
+    background-color: rgb(238, 241, 10);
+    transition: transform .7s linear;
+    &:hover{
+      transform: translateX(20px) translateY(-20px);
+      
+      }
+  }    
+}
+
+
+
 .code{
   background-color: black;
   color: white;

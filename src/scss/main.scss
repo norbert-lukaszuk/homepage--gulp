@@ -285,7 +285,15 @@ html{
       }
   
 }
-
+.img{
+  &__scale{
+    box-shadow: 7px 7px 8px black;
+    transition: transform .7s linear;
+    &:hover{
+      transform: scale(2);
+    }
+  }
+}
   
 .siteHeader{
   

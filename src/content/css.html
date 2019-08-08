@@ -19,7 +19,40 @@
         </ul></nav>
     </div>
      <button id="button" class="menu__button menu__button--js">≡</button>
+<h2>Animation & transition</h2>
+<p> transition: name duration timingFunction delay <br>
+<div> button { <br>
+    background-color: gray;<br>
+    transition: background-color .5s linear, color 1s ease-in-out;<br>
+    button::hover{<br>
+        background-color: green;<br>
+        color: gray;
+    } <br>
+} <br>
+</div>
+W tym przykładzie animujemy przejście kolorystyczne tła butttona z szarego na zielony oraz
+ koloru fontu po najechaniu myszką. Przy czym klor tła zmienia się liniowo i trwa krucej 
+ natomiat font zmnienia kolor dynamiczniej.
+</p>
+<div> button { <br>
+    background-color: gray;<br>
+    transition: background-color .5s linear, color 1s ease-in-out;<br>
+    <b>will-change: background-color;</b><br>
+    button::hover{<br>
+        background-color: green;<br>
+        color: gray;
+    } <br>
+} <br>
+<p> Możemy użyć funkcji 'will change: background-color;', która zapewni przyśpieszenie sprzętowe dla dynamiczniej
+    animacji. Nie możemy jednak jej nadużywać.
+</p>
+<h2>Transform</h2>
 
-</body>
+<div>
+    
+</div>
+</div>
+
+    </body>
 <script src="js/main.js"></script>
 </html>

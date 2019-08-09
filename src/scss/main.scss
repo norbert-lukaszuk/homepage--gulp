@@ -2,9 +2,38 @@
 // @import "_variables";
 // @import "famousPeople";
 // @import "forms";
-
+@keyframes colorChange{
+  0%{
+    background-color: hotpink;
+    color: red;
+  }
+  25%{
+    background-color: rgb(209, 235, 62);
+    color: white;
+  }
+  50%{
+    background-color: rebeccapurple;
+    color: green;
+  }
+  75%{
+    background-color: rgb(17, 189, 26);
+    color: blue;
+  }
+  100%{
+    background-color: hotpink;
+    color: red;
+  }
+}
 $greenColor: rgb(101, 216, 151);
-#button{
+.nameLabel{
+  position: absolute;
+  // right: 50px;
+  z-index: 5;
+  transition: transform .5s linear;
+  &:hover{
+    transform: translateX(-50px);
+    
+  }
   
 }
 #editor__link{
@@ -41,8 +70,18 @@ html{
 .buttonWraper{
   background: $greenColor;
 }
+.buttonAnimated{
+  background-color: hotpink;
+  border-radius: 10px;
+  width: 130px;
+  height: 80px;
+  border: none;
+  margin-right: 15px;
+  animation: colorChange 4s infinite;
+}
 .buttonTransition{
   background-color: gray;
+  border-radius: 10px;
   width: 130px;
   height: 80px;
   border: none;
@@ -56,6 +95,7 @@ html{
 }
   .buttonTransition__willChange{
       background-color: gray;
+      border-radius: 10px;
       width: 130px;
       height: 80px;
       border: none;
@@ -76,6 +116,7 @@ html{
   width: 130px;
   height: 80px;
   border: none;
+  border-radius: 10px;
   margin-right: 15px;
   background-color: aqua;
   transition: transform .7s linear;
@@ -87,6 +128,7 @@ html{
     width: 130px;
     height: 80px;
     border: none;
+    border-radius: 10px;
     margin-right: 15px;
     background-color: rgb(89, 91, 224);
     transition: transform .7s linear;
@@ -98,6 +140,7 @@ html{
     width: 130px;
     height: 80px;
     border: none;
+    border-radius: 10px;
     margin-right: 15px;
     background-color: rgb(238, 241, 10);
     transition: transform .7s linear;
@@ -289,8 +332,9 @@ html{
   &__scale{
     box-shadow: 7px 7px 8px black;
     transition: transform .7s linear;
+    width: 130px;
     &:hover{
-      transform: scale(2);
+      transform: scale(4);
     }
   }
 }

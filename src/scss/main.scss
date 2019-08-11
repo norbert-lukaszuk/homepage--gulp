@@ -25,17 +25,9 @@
   }
 }
 $greenColor: rgb(101, 216, 151);
-.nameLabel{
-  position: absolute;
-  // right: 50px;
-  z-index: 5;
-  transition: transform .5s linear;
-  &:hover{
-    transform: translateX(-50px);
-    
-  }
+
   
-}
+
 #editor__link{
   text-decoration: none;
   color:black;
@@ -296,6 +288,14 @@ html{
   
 .mainNavigation__list--js{
 
+}
+.nameInput{
+  
+ 
+  
+}
+.nameLabel{ 
+  
 }
 .navbox{
   display: grid;

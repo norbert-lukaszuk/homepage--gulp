@@ -68,6 +68,9 @@ html{
   border: none;
   margin-right: 15px;
   animation: colorChange 4s infinite;
+  &__move{
+  animation: transition;
+  }
 }
 .buttonTransition{
   background-color: gray;
@@ -286,26 +289,7 @@ html{
 .mainNavigation__list--js{
 
 }
-.nameInput{
-  background: transparent;
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-bottom: solid 2px white;
-  
-  &:focus::placeholder{
-    z-index: 10;
-    transition: transform .5s linear;
-    transform: translateY(-10px);
-    visibility: visible !important;
-    
-  }
-  
-  
-}
-.nameLabel{ 
-  
-}
+
 .navbox{
   display: grid;
   grid-template-columns: 1fr 1fr;

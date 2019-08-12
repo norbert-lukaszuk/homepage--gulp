@@ -24,6 +24,14 @@
     color: red;
   }
 }
+@keyframes move{
+  from{transform: translate(0, 0)};
+  to{transform: translate(-30px, -30px)};
+}
+@keyframes rotating{
+  from{transform: rotate(0)};
+  to{transform: rotate(180deg)};
+}
 $greenColor: rgb(101, 216, 151);
 
 #editor__link{
@@ -69,7 +77,12 @@ html{
   margin-right: 15px;
   animation: colorChange 4s infinite;
   &__move{
-  animation: transition;
+  animation: move 1s infinite;
+  }
+  &__rotate{
+    color: yellowgreen;
+    background-color: black;
+    animation: rotating 5s ease-in-out infinite alternate;
   }
 }
 .buttonTransition{
@@ -327,7 +340,7 @@ html{
     transition: transform .7s linear;
     width: 130px;
     &:hover{
-      transform: scale(4);
+      transform: scale(1.5);
     }
   }
 }

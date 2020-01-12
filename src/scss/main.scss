@@ -50,7 +50,9 @@ html{
   
  
 }
-
+a:visited{
+  color: inherit;
+}
 .bold {
   color: brown;
   font-size: 22px;
@@ -301,6 +303,26 @@ html{
   
 .mainNavigation__list--js{
 
+}
+.mozilla{
+  text-decoration: none;
+  font-size: 1.125rem;
+    &:hover{
+      color: white;
+    }
+
+    &__link{
+      display: flex;
+      justify-content: start;
+      padding: 10px;
+      background-color: rgba(219, 219, 219, 0.5);
+      border-radius: 10px;
+      width: fit-content;
+
+    }
+    &__image{
+      margin-right: 10px;
+    }
 }
 
 .navbox{
@@ -553,7 +575,11 @@ span{
 
   }
 }
-
+p{
+  font-size: 1.125rem;
+  text-align: justify;
+  padding: 0;
+}
 .paragraph{
   font-size: 18px;
   text-align: justify;
@@ -613,6 +639,7 @@ span{
 
 
   }
+  
   .paragraph{
     width: 467px;
   }

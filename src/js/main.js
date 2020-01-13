@@ -35,9 +35,22 @@ for(let propertyName in object)
 {console.log(`${propertyName}:${object[propertyName]}`)}
 
 const inputLS = document.querySelector('.inputLocalStorage');
-if (localStorage.getItem('input').length > 0){
+if (localStorage.getItem('input')!= null){
     inputLS.value = localStorage.getItem('input')
 }
 
-inputLS.addEventListener('keyup',(e) => {console.log(e.target.value)})
-inputLS.addEventListener('keyup',(e) => {localStorage.setItem('input',e.target.value)})
+inputLS.addEventListener('keyup',(e) => {console.log(e.target.value)});
+inputLS.addEventListener('keyup',(e) => {localStorage.setItem('input',e.target.value)});
+
+const sections = document.querySelectorAll('.main__header');
+const sectionsDiv = document.querySelector('.sections');
+const sectionsList = document.querySelector('.sectionsList');
+sections.forEach((e)=>{
+    const section = document.createElement('li');
+    section.innerText = e.textContent;
+    sectionsList.prepend(section);
+    
+})
+sectionsDiv = document.addEventListener('click', e =>{
+    sectionsList.classList.toggle('sectionsList--show');
+})

@@ -46,11 +46,14 @@ const sections = document.querySelectorAll('.main__header');
 const sectionsDiv = document.querySelector('.sections');
 const sectionsList = document.querySelector('.sectionsList');
 sections.forEach((e)=>{
+    const id = e.getAttribute('id');
+    console.log(id);
     const section = document.createElement('li');
-    section.innerText = e.textContent;
+    const link = `<a class="sectionsList__link" href="#${id}">${e.textContent}</a>`;;
+    section.innerHTML = link;
     sectionsList.prepend(section);
     
 })
-sectionsDiv = document.addEventListener('click', e =>{
+sectionsDiv.addEventListener('click', e =>{
     sectionsList.classList.toggle('sectionsList--show');
 })

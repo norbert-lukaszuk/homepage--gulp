@@ -15,22 +15,40 @@
     </ul>
 
 </nav>
-<button class="menu__button menu__button--js">≡</button>
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list">
+        <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+        <li><a href="html.html" class="mainNavigation__link">HTML</a></li>
+        <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+        <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+        <li><a href="git.html" class="mainNavigation__link">Git</a></li>
+    </ul></nav>
+</div>
 <body>
-    <h2 class="header2">Instalacja Gulpa</h2>
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div>
+
+    <h1 class="main__header">Instalacja Gulpa</h1>
     <p class="paragraph">W terminalu wpisujemy <b class="bold">npm install gulp-cli--global</b> lub wersja krótsza <b class="bold">npm install -g - gulp-cli</b>
     - tą instalację wykonujemy raz na cały system i najlepiej z uprawnieniami administartora
     </p>
     <p class="paragraph">Kiedy zaczynamy pracę w nowym projekcie <b class="bold">npm install </b>
      a przed ropoczęciem pracy nad projektem wchodzimy do kataklogu głównego projektu i piszemy <b class="bold">gulp</b>.</p>
-<h2 class="header2">Struktura katlogów w projekcie </h2>
+<h1 class="main__header">Struktura katlogów w projekcie </h1>
 <p class="paragraph">Pracę nad projektem prowadzimy w katalogu <b class="bold">src</b> nie tworzymy żadnych zmian
 w katalogu <b class="bold">dist</b> jest to katalog wynikowy naszej pracy i przy każdej zmianie w <b class="bold">src</b>
 wszystkie zmiany zostaną nadpisane. Katalog <b class="bold">src</b> zawiera podkatalogi <b class="bold">assets, content, js, pwa, scss</b>
 W katalogu <b class="bold">asstes</b> przechowujemy zdjęcia i inne pliki zewnętrzne. W <b class="bold">contetnt</b> są pliki html, natomiast w <b class="bold">scss</b>
  przechowujemy style.</p>
  <div class="image__box"><img class="image--shadow" src="assets/img/gulp file tree.PNG" alt="Gulp filr tree"></div>
- <h2 class="header2">Automatyczna publikacja na Github Pages</h2>
+ <h1 class="main__header">Publikacja na Github Pages</h1>
  <p class="paragraph">W pliku <b class="bold">package.json</b> umieszaczamy wpis scripts tak jak poniżej </p>
  <div class="image__box"><img class="image--shadow" src="assets/img/gulp  deploy github.PNG" alt="Deploy on github pages"></div>
 <p class="paragraph">Następnym krokiem jest komenda <b class="bold">npm run deploy </b> 

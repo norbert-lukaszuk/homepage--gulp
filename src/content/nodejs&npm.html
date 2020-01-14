@@ -9,69 +9,31 @@
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<style>
-    /* html {
-        max-width: 960px;
-        margin: 0 auto;
-        background: rgb(152, 226, 117);
-        font-family: Arial, Helvetica;
-    }
 
-    .bold {
-        color: brown;
-        font-size: 22px;
-    }
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list mainNavigation__list--js">
+            <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+        <li><a href="html.html" class="mainNavigation__link">HTML</a></li>
+        <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+        <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+        <li><a href="git.html" class="mainNavigation__link">Git</a></li>
+        <li><a href="gulp.html" class="mainNavigation__link">Gulp</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
 
-    .header1 {
-        text-align: center;
-        font-weight: bold;
-    }
-    .image{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
-    .image--shadow{
-        box-shadow: 7px 7px 8px black;
-        margin-bottom: 30px;
-    }
-    .link {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-    }
 
-    .link:hover {
-        color: white;
-    }
-
-    .paragraph {
-        font-size: 18px;
-        text-align: justify;
-        
-    }
-
-    .paragraph:first-letter {
-        font-size: 24px;
-        background: tomato;
-    } */
-</style>
-<nav>
-    <ul class="navigationList navigationList--js">
-				<li><a class="link__menu" href="index.html">Home Page</a></li>
-                <li><a class="link__menu" href="forms.html">Forms</a></li>
-                <li><a class="link__menu" href="sass.html">SASS</a></li>
-        
-    </ul>
-
-</nav>
-<button class="menu__button menu__button--js">≡</button>
 <body>
-    <div class="border border--black">
-    <h1 class="header1">Node.js</h1>
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div>
+    <h1 class="main__header">Node.js</h1>
     <p class="paragraph">Pobieramy i instalujemy <b class="bolder">noda</b> ze stronki <a class="link__menu"
             href="https://nodejs.org/en/">www.nodejs.org</a>
         wybieramy wersję <b class="bolder">LTS</b>. </p>
@@ -80,7 +42,7 @@
         Teraz z poziomu terminala możemy odpalać pliki .js poza konsolą w przeglądarce. Używamy do tego polecenia
         <b class="bolder">node</b> np. wpisujemy <b class="bolder">"node script.js"</b> .
     </p>
-    <h1 class="header1">NPM - Node Package Manager</h1>
+    <h1 class="main__header">NPM - Node Package Manager</h1>
     <p class="paragraph">Inicjalizacja menedżera odbywa się w katalogu projektu do którego należy wejść robimy to
         poleceniem <br> <b class="bolder">"npm  init -y"</b> jeżeli nie chcemy wypełniać właściwości lub <b class="bolder">"npm  init"</b>.
         Dla każdego folderu trzeba przeprowadzić oddzielną inicjalizację.
@@ -102,7 +64,7 @@
         <img class="image--shadow" src="assets/img/moment_package_code.png" >
         <img class="image--shadow" src="assets/img/monent_package.png">
     </div>
-    </div>
+    
 </body>
 <script src="js/main.js"></script>
 </html>

@@ -39,21 +39,30 @@ if (localStorage.getItem('input')!= null){
     inputLS.value = localStorage.getItem('input')
 }
 
-inputLS.addEventListener('keyup',(e) => {console.log(e.target.value)});
-inputLS.addEventListener('keyup',(e) => {localStorage.setItem('input',e.target.value)});
+// inputLS.addEventListener('keyup',(e) => {console.log(e.target.value)});
+// inputLS.addEventListener('keyup',(e) => {localStorage.setItem('input',e.target.value)});
 
 const sections = document.querySelectorAll('.main__header');
 const sectionsDiv = document.querySelector('.sections');
 const sectionsList = document.querySelector('.sectionsList');
-sections.forEach((e)=>{
+const sectionsButton = document.querySelector('.sectionsButton');
+const sorted = Array.from(sections).reverse();
+console.log(sorted);
+sorted.forEach((e)=>{
     const id = e.getAttribute('id');
-    console.log(id);
     const section = document.createElement('li');
-    const link = `<a class="sectionsList__link" href="#${id}">${e.textContent}</a>`;;
+    const link = `<a class="sectionsList__link" href="#${id}">${e.textContent}</a>`;
     section.innerHTML = link;
     sectionsList.prepend(section);
     
 })
 sectionsDiv.addEventListener('click', e =>{
     sectionsList.classList.toggle('sectionsList--show');
+    if(sectionsList.classList.contains('sectionsList--show')){
+        sectionsButton.innerText = 'X';
+        sectionsButton.classList.add('sectionsButton--close');
+    }
+    else{sectionsButton.innerText = 'Sections';
+        sectionsButton.classList.remove('sectionsButton--close');
+    }
 })

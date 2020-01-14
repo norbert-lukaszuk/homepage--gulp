@@ -7,7 +7,6 @@
     <title>CSS</title>
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body> 
 <div class="navbox">
     <nav class="mainNavigation">
             <ul class="mainNavigation__list mainNavigation__list--mobile">
@@ -18,8 +17,68 @@
             <li><a href="sass.html" class="mainNavigation__link">SASS</a></li>
         </ul></nav>
     </div>
+
+<body> 
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div>
      <button id="button" class="menu__button menu__button--js">≡</button>
-<h2>Animation & transition</h2>
+
+     <h1 class="main__header">Pseudoelements</h1>
+     <h2 class="second__header">::before and ::after</h2>
+     <h2 class="second__header">This is the text that is sorounded by the elements</h2>
+     <p class="paragraph">Pseudoelement <strong>::before</strong> lub <strong>::after</strong> umieszcza się bezpośrednio
+         przed blokiem lub
+         za nim i może być dowolniestylowany. Zawartość tych pseudoelementów jest wpisywana przez własność
+         <strong>content:" ";</strong> może ona być pusta ale jest obowiązkowa bo bez tego pseudoelementy się nie
+         wyświetlą.
+     </p>
+     <div class="image__box">
+         <img class="image image--shadow" src="assets/img/before&after.png" alt="Before & after elements code">
+     </div>
+     <hr>
+     <h2 class="second__header">:hover</h2>
+     <h2 class="hover__header">Hover cursor over this text and You will see it's changing his color</h2>
+     <p class="paragraph">Pseudolement <strong>:hover</strong> pozwala zmieniać właściwość elementu po najechaniu
+         na niego myszką np tak jak poniżej zmnienić kolor fontu.</p>
+     <div class="image__box">
+         <img class="image image--shadow" src="assets/img/hover.png" alt="Hover code snippet">
+     </div>
+     <hr>
+     <h2 class="second__header">:first-child & :last-child</h2>
+     <div class="list__box">
+         <ul class="list">LIST
+             <li class="listItem">List item 1 --this is :first-child element</li>
+             <li class="listItem">List item 2
+                 <ul>
+                     <li class="listItem">List item 1 --this is :first-child element </li>
+                     <li class="listItem">List item 2</li>
+                     <li class="listItem">List item 3 --this is :last-child element</li>
+                 </ul>
+             </li>
+             <li class="listItem">List item 3</li>
+             <li class="listItem">List item 4 --this is :last-child element</li>
+         </ul>
+         <p class="paragraph paragraph__box">Pseudoelement <strong>:first-child</strong> zmienia własności pierwszego elementu z danego
+             bloku natomiast
+             <strong>:last-child</strong>zmienia właściwości ostatniego elementu z bloku w tym przypadku listy</p>
+         </div>
+         <div class="image__box"><img class="image image--shadow" src="assets/img/first&last-child.png" alt="First and last child element code snippet" ></div>    
+     
+     <hr>
+     <h2 class="second__header">:focus</h2>
+     <label for="input1">Please type Your name to see how <strong>:focus</strong> element works:</label><br><br>
+     <input class="input" type="text" name="input1" id="input1" placeholder="your name">
+     <p class="paragraph">W momencie kliknięcia na pole inputu tworzy się ramka i zmienia się tło aby podkreślić gdzie
+         powinna się
+         skupiać uwaga usera. Można też w inny sposób podkreślić w którym polu się znajdujemy.</p>
+     <div class="image__box">
+         <img class="image image--shadow" src="assets/img/focus.png" alt="Focus Pseudoelement code snippet">
+     </div>
+
+<h1 class="main__heared">Animation & transition</h1>
 <p class="code"> <span class="code__const"> transition: name</span> <span class="code__comment">duration</span> <span class="code__class">timingFunction</span> delay</p> <br>
 <div class="button"> <button class="buttonTransition">transition</button> <button class="buttonTransition__willChange">transition <br> (will-change)</button></div>
 <p class="paragraph">  

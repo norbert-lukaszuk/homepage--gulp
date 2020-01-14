@@ -26,18 +26,20 @@
     </div>
      <button id="button" class="menu__button menu__button--js">≡</button>
 
-     <h1 class="main__header">Pseudoelements</h1>
+     <h1 class="main__header" id="pseudoelements">Pseudoelements</h1>
      <h2 class="second__header">::before and ::after</h2>
-     <h2 class="second__header">This is the text that is sorounded by the elements</h2>
+     <div class="beforeAfter">This is the text that is sorounded by the elements</div>
      <p class="paragraph">Pseudoelement <strong>::before</strong> lub <strong>::after</strong> umieszcza się bezpośrednio
          przed blokiem lub
          za nim i może być dowolniestylowany. Zawartość tych pseudoelementów jest wpisywana przez własność
          <strong>content:" ";</strong> może ona być pusta ale jest obowiązkowa bo bez tego pseudoelementy się nie
          wyświetlą.
      </p>
-     <div class="image__box">
+     
+     <script class="gist" src="https://gist.github.com/norbert-lukaszuk/bd8520b1d498627c2f0a7420c70b73b5.js"></script>
+     <!-- <div class="image__box">
          <img class="image image--shadow" src="assets/img/before&after.png" alt="Before & after elements code">
-     </div>
+     </div> -->
      <hr>
      <h2 class="second__header">:hover</h2>
      <h2 class="hover__header">Hover cursor over this text and You will see it's changing his color</h2>
@@ -78,7 +80,7 @@
          <img class="image image--shadow" src="assets/img/focus.png" alt="Focus Pseudoelement code snippet">
      </div>
 
-<h1 class="main__heared">Animation & transition</h1>
+<h1 class="main__header" id="transitions">Animation & transition</h1>
 <p class="code"> <span class="code__const"> transition: name</span> <span class="code__comment">duration</span> <span class="code__class">timingFunction</span> delay</p> <br>
 <div class="button"> <button class="buttonTransition">transition</button> <button class="buttonTransition__willChange">transition <br> (will-change)</button></div>
 <p class="paragraph">  

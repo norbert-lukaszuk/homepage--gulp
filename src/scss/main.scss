@@ -258,7 +258,6 @@ a:visited{
 
 
 .list {
-
   font-weight: bold;
   min-width: 40%;
 }
@@ -271,9 +270,16 @@ a:visited{
 .list__git{
   padding-left: 0;
 }
+.list__terminal{
+  padding: 0;
+}
 .listItem {
   font-weight: normal;
   &__git{
+    list-style: none;
+    margin-bottom: 15px;
+  }
+  &__terminal{
     list-style: none;
     margin-bottom: 15px;
   }
@@ -587,6 +593,15 @@ a:visited{
     font-size: 1.375rem;
     background-color: black;
     color: crimson;
+    margin-bottom: 15px;
+    padding: 0 5px;
+    border-radius: 5px;
+    line-height: 1.7;
+  }
+  &__terminal{
+    font-size: 1.375rem;
+    background-color: black;
+    color: rgba(9, 209, 59, 0.568);
     margin-bottom: 15px;
     padding: 0 5px;
     border-radius: 5px;

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Git</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list">
+            <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+            <li><a href="html.html" class="mainNavigation__link">HTML</a></li>
+            <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+            <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+            <li><a href="sass.html" class="mainNavigation__link">SASS</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+
+<body>
+    <div class="body__logoWraper"><img class="body__gitLogo" src="assets/img/git logo.png" alt="git logo"></div>
+
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+        <section>
+            <h1 class="main__header" id="initialisation">Inicjowanie pracy z gitem</h1>
+            <ul class="list__git">
+                <li class="listItem__git"><span class="span__git">git config --global user.name</span><span
+                        class="paragraph">--konfiguracja nazwy użytkonika</span></li>
+                <li class="listItem__git"><span class="span__git">git config --global user.email</span><span
+                        class="paragraph">--konfiguracja emaila użytkownika</span></li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h1 class="main__header" id="commiting">Commitowanie zmian</h1>
+            <ul class="list__git">
+                <li class="listItem__git"><span class="span__git">git status</span><span class="paragraph">--sprawdzamy
+                        co jest do zacommitowania</span></li>
+                <li class="listItem__git"><span class="span__git">git add .</span><span class="paragraph">--dodaj pliki
+                        do zacommitowania</span></li>
+                <li class="listItem__git"><span class="span__git">git commit -m'masage to commit'</span><span
+                        class="paragraph">--commituj zmiany</span></li>
+                <li class="listItem__git"><span class="span__git">git push</span><span class="paragraph">--wypchnij
+                        zmiany githuba</span></li>
+                <li class="listItem__git"><span class="span__git">git restore</span><span class="paragraph">--kasuje
+                        wszystkie zmiany niezacommitowane</span></li>
+            </ul>
+        </section>
+        <section>
+            <h1 class="main__header" id="gitBash_home">Git Bash zmiana home directory</h1>
+            <ul class="list__git">
+
+                <li class="listItem__git"><span class="span__git">Git Bash shortcut > Właściwości > Rozpocznij w</span><span
+                        class="paragraph">--podajemy ścieżkę w której Git Bash ma się otwierać</span></li>
+                <li class="listItem__git"><span class="span__git">"C:\Program Files (x86)\Git\git-bash.exe" --cd-to-home</span><span
+                        class="paragraph">--usuwamy ' --cd-to-home' zapisujemy zmiany. Gotowe.</span></li>
+                
+
+            </ul>
+        </section>
+        <script src="js/main.js"></script>
+</body>
+
+</html>

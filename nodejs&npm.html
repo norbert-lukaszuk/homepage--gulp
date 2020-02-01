@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node.js & NPM</title>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list mainNavigation__list--js">
+            <li><a href="index.html" class="mainNavigation__link">Home Page</a></li>
+        <li><a href="html.html" class="mainNavigation__link">HTML</a></li>
+        <li><a href="css.html" class="mainNavigation__link">CSS</a></li>
+        <li><a href="javaScript.html" class="mainNavigation__link">Java Script</a></li>
+        <li><a href="git.html" class="mainNavigation__link">Git</a></li>
+        <li><a href="gulp.html" class="mainNavigation__link">Gulp</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+
+
+<body>
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div>
+    <h1 class="main__header">Node.js</h1>
+    <p class="paragraph">Pobieramy i instalujemy <b class="bolder">noda</b> ze stronki <a class="link__menu"
+            href="https://nodejs.org/en/">www.nodejs.org</a>
+        wybieramy wersję <b class="bolder">LTS</b>. </p>
+    <p class="paragraph">Opdalamy terminal lub wiersz poleceń w Windowsie i sprawdzamy czy node się
+        zainstalował poleceniem <b class="bolder">node -v</b> po czym zostanie wyświetlona wersja zainstalowanego noda.
+        Teraz z poziomu terminala możemy odpalać pliki .js poza konsolą w przeglądarce. Używamy do tego polecenia
+        <b class="bolder">node</b> np. wpisujemy <b class="bolder">"node script.js"</b> .
+    </p>
+    <h1 class="main__header">NPM - Node Package Manager</h1>
+    <p class="paragraph">Inicjalizacja menedżera odbywa się w katalogu projektu do którego należy wejść robimy to
+        poleceniem <br> <b class="bolder">"npm  init -y"</b> jeżeli nie chcemy wypełniać właściwości lub <b class="bolder">"npm  init"</b>.
+        Dla każdego folderu trzeba przeprowadzić oddzielną inicjalizację.
+    </p>
+    <p class="paragraph">W momencie inicjalizacji tworzy się folder <b class="bolder">node_modules</b> są tam przechowywane pliki modułów 
+    tego folderu nie commitujemy ponieważ jest "ciężki i zawiera niepotrzebne elementy". Git ignoruje pliki i foldery zapisane w pliku 
+    <b class="bolder">.gitignore</b>. Tworzymy taki plik w edytorze kodu, otwieramy go i w pierwszej linijce wpisujemy <b class="bolder">node_modules</b>
+    i pozostawiamy wolną linijkę kodu. Zapisujemy plik i od tej pory folder node_modules nie będzie uwzględniany przez gita. Opcja ta może być wykorzystywana
+    do każdego elementu, którego nie chcemy commitować.</p>
+    <p class="paragraph"> Razem z pakietami instalują się także pliki <b class="bolder">package-lock.json i package.json</b>
+     zawierają one informacje o zainstalowanych pakietach i ich autentyczności. Możemy skasować cały folder <b class="bolder">node_modules</b> po czym możemy przywrócić
+     poleceniem <b class="bolder">npm  install</b> .
+    </p>
+    <p class="paragraph">Przykładowe użycie pakietu <b>npm "moment"</b>. Po pobraniu pakietu tworzymy plik JS np. <b>nodetest.js</b> po czym wpisujemy 
+        kod przykładowo taki jak poniżej.
+    </p>
+    
+    <div class="image">
+        <img class="image--shadow" src="assets/img/moment_package_code.png" >
+        <img class="image--shadow" src="assets/img/monent_package.png">
+    </div>
+    
+</body>
+<script src="js/main.js"></script>
+</html>

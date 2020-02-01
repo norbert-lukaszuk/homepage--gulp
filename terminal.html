@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Terminal</title>
+</head>
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list mainNavigation__list--js">
+            <li><a class="mainNavigation__link" href="index.html">Home Page</a></li>
+            <li><a class="mainNavigation__link" href="nodejs&npm.html">Node.js & npm</a></li>
+            <li><a class="mainNavigation__link" href="forms.html">Forms</a></li>
+            <li><a class="mainNavigation__link" href="sass.html">SASS</a></li>
+            <li><a class="mainNavigation__link" href="pseudoelements.html">Pseudoelements</a></li>
+            <li><a class="mainNavigation__link" href="gulp.html">Gulp</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+
+<body>
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div> 
+    <section><h1 class="main__header">Ogólne komendy</h1>
+    
+        <ul class="list__terminal">
+            <li class="listItem__terminal"><span class="span__terminal">pwd</span><span class="paragraph">--aktualny katalog w którym jestem</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">ls</span><span class="paragraph">--wypisuje pliki które są w katalogu</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">start .</span><span class="paragraph">--otwiera ten katalog w explporerze</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">ctrl+L / clear</span><span class="paragraph">--czyści ekran</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">mkdir nazwa</span><span class="paragraph">--tworzy katalog</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">cat file.txt</span><span class="paragraph">--wypisuje zawartość pliku w terminalu</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">nano file.txt</span><span class="paragraph">--otwiera plik w edytorze 'nano'</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">rm file.txt</span><span class="paragraph">--usuwa plik</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">rm -r folder</span><span class="paragraph">--usuwa folder wraz z zawartością</span></li>
+            <li class="listItem__terminal"><span class="span__terminal">ls</span><span class="paragraph">--</span></li>
+        </ul>
+    </section>
+
+    
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<div class="navbox">
+    <nav class="mainNavigation">
+        <ul class="mainNavigation__list mainNavigation__list--js">
+            <li><a class="mainNavigation__link" href="index.html">Home Page</a></li>
+            <li><a class="mainNavigation__link" href="nodejs&npm.html">Node.js & npm</a></li>
+            <li><a class="mainNavigation__link" href="forms.html">Forms</a></li>
+            <li><a class="mainNavigation__link" href="sass.html">SASS</a></li>
+            <li><a class="mainNavigation__link" href="pseudoelements.html">Pseudoelements</a></li>
+            <li><a class="mainNavigation__link" href="gulp.html">Gulp</a></li>
+        </ul>
+    </nav>
+</div>
+
+<div class="buttonWraper">
+    <button id="button" class="menu__button menu__button--js">≡</button>
+</div>
+
+<body>
+    <div class="sectionsWraper">
+        <div class="sections"> <span class="sectionsButton">Sections</span>
+            <ul class="sectionsList"></ul>
+        </div>
+    </div>
+    <div class="flexBox">
+        <!-- Tablice - Arrays -->
+        <h1 class="main__header" id="arrays">Tablice / Arrays</h1>
+        <div class="mozilla__link">
+            <img class="mozilla__image" src="assets/img/mozilla dino 20x20.png" alt="mozilla dino head">
+            <a class="mozilla"
+                href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">MDN:
+                Arrays</a>
+        </div>
+        <p class="paragraph">Tablice są to struktury danych, które zawierają w sobie wiele elementów
+            różnego typu. Mogą to być stringi, liczby a nawet obiekty umieszczone razem w jednej tablicy.
+            Poszczególne elementy tablicy są oddzielone od siebie przecinkami a sama tablica zawiera się
+            między dwoma nawiasami kwadratowymi <b>"[ ]"</b>.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 1.png" alt="">
+        </div>
+
+        <p class="paragraph">Do każdego elementu z tablicy możemy się dostać podając jej nazwę i pozycję elementu
+            w kwadratowych nawiasach numerujemy od zera czyli <b>[element 0, element 1, element 2, ...]</b>
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 2.png" alt="">
+        </div>
+        <p class="paragraph">Możemy także sprawdzić ile elementów znajduje się w tablicy, wykonujemy to poleceniem
+            <b>.length</b>
+            przed którym bezpośrednio podajemy nazwę tablicy np. <b>myArray.length</b>.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 3.png" alt="">
+        </div>
+
+        <p class="paragraph">Tekst zapisany w cudzysłowiu <b>" "</b> jest traktowany jako tablica znaków w związku ztym
+            możemy się dostać
+            do każdego znaku będącego elementem tablicy. Możemy także szybko sprawdzić długość tekstu za pomocą
+            wspomnianej
+            wyżej metody
+            <b>.length</b>.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 4.png" alt="">
+        </div>
+        <p class="paragraph">Do tablic możemy także dodawać elementy na ich początku lub końcu używając metod
+            <b>.push</b>
+            kiedy chcemy dodać na
+            początku tablicy i <b>.unshift</b> gdy element ma się znaleść na końcu tablicy.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 5.png" alt="">
+        </div>
+        <p class="paragraph">Usuwanie elementu z początku tablicy wykonujemy używając <b>.shift()</b> nie podając
+            rzadnego
+            argumentu natomiast
+            usunąc element z końca tablicy możemy za pomocą<b>.pop()</b>
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 6.png" alt="">
+        </div>
+
+        <p class="paragraph">Aby usunąć więcej elementów w danym zakresie użyjemy metody <b>.splice(index,
+                liczbaElementów)</b> gdzie index oznacza
+            miejsce od którego należy zacząć wycinać a liczba elementów to poprostu licza elementów które mają być
+            usunięte.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 7.png" alt="">
+        </div>
+        <p class="paragraph">Pobieranie konkretnego wycinka z całej tablicy robimy metodą <b>.slice(index,stop)</b>
+            gdzie
+            index
+            to element od którego ma się zacząć wycinanie a stop to miejsce gdzie ma się skończyć.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/js array 8.png" alt="">
+        </div>
+        <!-- Pętle - Loops -->
+        <h1 class="main__header" id="loops">Pętle / Loops</h1>
+        <h2 class="second__header">Pętla for</h2>
+        <p class="paragraph">Najczęściej wykorzystywaną pętlą jest właśnie pętla <b>for</b> wykonuje się ona do momentu
+            osiągniecia założonego warunku
+            "zatrzymującego" a kolejne przejścia przez pętlę powodują iterację wyrażenia, które jest właśnie warunkiem
+            zatrzymującym.
+        </p>
+        <div class="image__box">
+            <img class="image image--shadow" src="assets/img/for loop 1.png" alt="">
+        </div>
+        <p class="paragraph">W wyżej widocznym przykładzie warunek <b>i = 0</b> jest inicjalizacją pętli, <b>i <
+                    myArray.length</b> jest warynkiem stopującym dalsze wykonywanie pętli (.length zwraca ile jest
+                    elementów w tablicy) natomiast <b>i++</b> jest wyrażeniem inkrementującym pozwalającym określić ile
+            powtórzeń
+            zostało wykonanych.
+            Zadaniem tej pętli było wypisanie po koleji elementów tablicy myArrey przy użyciu console.log a do
+        </p>
+    </div>
+    <h2 class="second__header">Postinkrementacja i++ / postdekrementacja i--</h2>
+    <p class="paragraph">W tym przypadku wartość jest inkrementowana lub dekrementowana po wykonaniu pierwszego
+        przebiegu pętli</p>
+
+    <h2 class="second__header">preinkrementacja ++i / predekrementacja --i</h2>
+    <p class="paragraph">Tutaj inkrementacja lub dekrementacja ma miejsce przed pierwszym przebiegiem pętli.</p>
+
+    <h2 class="second__header">Pętla for in</h2>
+    <p class="paragraph">Jest to odmiana pętli <b>for</b> służąca to pracy z obiektami <i><b>for</b>(własność <b>in</b>
+            obiekt)</i>, może służyć np do wypisanie własności
+        biektu tak jak w przykładzie poniżej.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js loops 1.png" alt="">
+    </div>
+    <h2 class="second__header">Pętla for of</h2>
+    <p class="paragraph">Ta odmiana pętli <b>for</b> służy do pracy z tablicami <i><b>for(element of tablica)</b></i>
+        także może być użyta do wypisania w szybki sposób
+        poszczególnych elementów tablicy</p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js loops 2.png" alt="">
+    </div>
+    <h2 class="second__header">Pętla while</h2>
+    <p class="paragraph">Ten rodzaj pętli wykonuje się do momentu kiedy warunek logiczny jest prawdziwy
+        <i><b>while</b>(warunekLogiczny){kod do wykonania}</i></p>
+    <h2 class="second__header">Pętla do while</h2>
+    <p class="paragraph">W tej pętli kod do wykonania znajduje się nad warunkiem logicznym <b>do</b>{kod do wykonania}
+        <b>while</b>(warunek logiczny)</p>
+    <!-- Local Storage -->
+    <h1 class="main__header" id="data">Przechowywanie danych w JS</h1>
+    <h2 class="second__header">Ciasteczka / cookies</h2>
+    <p class="paragraph">Ciasteczka tworzymy używając polecenia <i><b>document.cookie="nazwa=wartość"</b></i></p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js dataStorage 2.png" alt="">
+    </div>
+    <p class="paragraph">Zawartość ciasteczek możemy podejrzeć używająć devtools (DOM) w zakładce <b>"Aplications"</b>
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js dataStorage 1.png" alt="">
+    </div>
+    <p class="paragraph">Zawartość ciasteczek możemy także odczytać za pomocą <b>conosole.log(document.cookie)</b> gdzie
+        wartości zostaną zwrócone w jednym ciągu po średniku</p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js dataStorage 3.png" alt="">
+    </div>
+    <h2 class="second__header">Local storage</h2>
+    <ul class="localStorage__list">
+        <li>Tworzenie elementu <b><i>localStorage.setItem('nazwa',wrtość)</i></b></li>
+        <li>Pobieranie elementu <b><i>localStorage.getItem('nazwa')</i></b></li>
+        <li>Usuwanie elementu <b><i>localStorage.removeItem('nazwa')</i></b></li>
+    </ul>
+    <h2 class="second__header">Dodawanie obiektu do Local storage</h2>
+
+    <p class="paragraph">Nie możemy dodawać obiektu bezpośrednio do Local storage, musimy najpierw zamienić go na string
+        typu JSON. Użwamy do tego metody
+        <b><i>JSON.strigify(obiekt)</i></b>. W sytuacji odwrotnej pobieramy string z Local storage i zamieniamy
+        (parsujemy) go do formy obiektu przy użyciu
+        metody <b><i>JSON.parse(stringJSON)</i></b>.
+    </p>
+    <div class="image__box">
+        <img class="image image--shadow" src="assets/img/js dataStorage 4.png" alt="">
+    </div>
+    <h2 class="second__header">Przechowywanie danych z input w Local storage</h2>
+    <label for="inputLocalStorage">Enter the text: </label>
+    <input class="inputLocalStorage" type="text" name="inputLocalStorage" id="inputLocalStorage">
+    <h2 class="second__header">Simple editor</h2>
+    <p class="paragraph">Zadaniem tego protego edytora jest przyjęcie tekstu z input i zapisanie go w local storage po
+        kliknięciu buttona save. Następnie po
+        po kliknięciu w button 'load' wypisanie tego tesktu w textarea, w którym wcześniej wpisywaliśmy tekst do
+        zapisania.
+        Edytor znajduje się <a id="editor__link" href="https://norbert-lukaszuk.github.io/simple-editor/">tutaj</a>...
+    </p>
+    <!-- Code presentation -->
+    <p class="code">
+        <span class="code__comment">// Zapisuje w zmiennej input wpisywany w textarea</span><br>
+        <span class="code__const">const</span> inputLS = <span
+            class="code__querySelector">document.querySelector</span>('.textArea');<br>
+
+        <span class="code__comment">// Przypisuje do zmiennych buttony na podstawie ich klas z modyfikarem
+            '--js'</span><br>
+        <span class="code__const">const</span> loadButton = <span
+            class="code__querySelector">document.querySelector</span>(<span class="code__class">
+            '.buttons__load--js'</span>);<br>
+        <span class="code__const">const</span> saveButton = <span
+            class="code__querySelector">document.querySelector</span>(<span class="code__class">
+            '.buttons__save--js'</span>);<br>
+        <span class="code__comment">// Nasłuchuje klikniecia load button i wypisuje przez '.innerHTML' pobrane z
+            localStorage dane jeśli są zapiane</span><br>
+        loadButton.addEventListener('click', (e)=>{inputLS <span
+            class="code__method">.innerHTML</span>=(localStorage<span
+            class="code__method">.getItem</span>('inputTextArea'))});<br>
+        <span class="code__comment">// Nasłuchuje klikniecia load button i wypisuje przez '.innerHTML' pobrane z
+            localStorage dane jeśli są zapiane</span><br>
+        saveButton.addEventListener('click',(e)=>{localStorage<span
+            class="code__method">.setItem</span>('inputTextArea',inputLS<span class="code__method">.value</span>)})<br>
+        <span class="code__comment">// Nasłuchuje kliknięcia w clear button po czym czyści zawartość localStorage metodą
+            '.clear()'</span><br>
+        clearButton.addEventListener('click',(e)=>{localStorage <span class="code__method">.clear()</span>});<br>
+    </p>
+    <!-- Code presentation -->
+    <h2 class="second__header">Destrukturyzajca</h2>
+
+    <div class="mozilla__link">
+        <img class="mozilla__image" src="assets/img/mozilla dino 20x20.png" alt="mozilla dino head">
+        <a class="mozilla"
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">MDN:
+            Destructuring assignment</a>
+    </div>
+
+    <p class="paragraph">Destrukturyzjca polega na wypisaniu z obiektu do zmiennnych poszczególnych właściwość tego
+        obiektu. Mamy obiekt myObject </p>
+    <img class="image image--shadow" src="assets/img/myObject.png" alt="myObject">
+
+    <p>Aby "wyciągnąć" z obiektu właściwości <b>name, lastName, email</b> używamy następującego zapisu. Ważne jest aby
+        podać klucze dla własności takie jak są w obiekcie inne nie zadziałają
+        wtedy zmienne będą nazywały się tak jak te klucze</p>
+    <img class="image image--shadow" src="assets/img/js myObject restruturisation.PNG" alt="myObject restruturisation">
+    <p>Jeżeli chcemy zmienić nazwę stosujemy taki zapis</p>
+    <img class="image image--shadow" src="assets/img/js myObject restruct nameChange.PNG"
+        alt="myObject restruturisation name change">
+    <p class="paragraph">Destrukturyzować możemy także tablice. Tutaj nazwa zmiennej nie musi pokrywać się za
+        zawartością do zmiennych przypisywane są kolejne elementy tablic.
+        Jeżeli chcemy pominć jakiś elemenent w miejsce jego przypisania zostawiamy puste pole oddzielone przecinkami
+        <b>",,"</b></p>
+    <img class="image image--shadow" src="assets/img/js array restructurisation.PNG" alt="array restruturisation">
+    <p class="paragraph">Spread operator <b>(...)</b> pozwala na wypisanie z tablicy poszczególnych elemenetów bez
+        konieczości odwoływania się do każdego po koleji</p>
+    <img class="image image--shadow" src="assets/img/js array spread.PNG" alt="array restruturisation">
+
+
+</body>
+
+
+<script src="js/main.js"></script>
+
+</html>
